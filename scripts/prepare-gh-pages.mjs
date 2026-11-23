@@ -15,8 +15,14 @@ function normalizeBasePath(raw) {
   return trimmed ? `/${trimmed}/` : '/';
 }
 
-const basePath = normalizeBasePath(process.env.VITE_BASE_PATH || '/');
-const customDomain = (process.env.GH_PAGES_CNAME || '').trim();
+const rootCnamePath = path.join(ROOT, 'CNAME');
+const detectedRootCname = fs.existsSync(rootCnamePath)
+  ? fs.readFileSync(rootCnamePath, 'utf8').trim()
+  : '';
+const customDomain = (process.env.GH_PAGES_CNAME || detectedRootCname || '').trim();
+const basePath = normalizeBasePath(
+  process.env.VITE_BASE_PATH || (customDomain ? '/' : '/')
+);
 const siteUrl = (
   process.env.VITE_SITE_URL ||
   (customDomain ? `https://${customDomain}` : 'https://www.visatripglobal.com')
