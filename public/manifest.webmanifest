@@ -1,0 +1,18 @@
+{
+  "name": "Visatrip Global — প্রতিটি গন্তব্যে এক বিশ্বস্ত সহযোগী",
+  "short_name": "Visatrip Global",
+  "description": "Trusted travel agency in Chapai Nawabganj, Bangladesh for Work Permit, Tourist Visa, Student Consultancy, Hajj & Umrah, India Visa, Air Ticketing, Hotel Booking & Tour Packages.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F4",
+  "theme_color": "#0B1F3A",
+  "lang": "bn-BD",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

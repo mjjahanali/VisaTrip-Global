@@ -1,0 +1,27 @@
+{
+  "redirects": [
+    { "from": "/home", "to": "/", "status": 301 },
+    { "from": "/en/home", "to": "/en", "status": 301 },
+    { "from": "/umrah", "to": "/services/hajj-umrah", "status": 301 },
+    { "from": "/hajj", "to": "/services/hajj-umrah", "status": 301 },
+    { "from": "/hajj-umrah", "to": "/services/hajj-umrah", "status": 301 },
+    { "from": "/en/umrah", "to": "/en/services/hajj-umrah", "status": 301 },
+    { "from": "/en/hajj", "to": "/en/services/hajj-umrah", "status": 301 },
+    { "from": "/work-permit", "to": "/services/work-permit", "status": 301 },
+    { "from": "/en/work-permit", "to": "/en/services/work-permit", "status": 301 },
+    { "from": "/tourist-visa", "to": "/services/tourist-visa", "status": 301 },
+    { "from": "/student-visa", "to": "/services/student-consultancy", "status": 301 },
+    { "from": "/india-visa", "to": "/services/india-visa", "status": 301 },
+    { "from": "/en/india-visa", "to": "/en/services/india-visa", "status": 301 },
+    { "from": "/air-ticket", "to": "/services/air-ticketing", "status": 301 },
+    { "from": "/hotel-booking", "to": "/services/hotel-booking", "status": 301 },
+    { "from": "/packages", "to": "/tour-packages", "status": 301 },
+    { "from": "/en/packages", "to": "/en/tour-packages", "status": 301 },
+    { "from": "/privacy", "to": "/privacy-policy", "status": 301 },
+    { "from": "/terms", "to": "/terms-and-conditions", "status": 301 },
+    { "from": "/refund", "to": "/refund-policy", "status": 301 },
+    { "from": "/areas", "to": "/service-areas", "status": 301 },
+    { "from": "/locations", "to": "/service-areas", "status": 301 },
+    { "from": "/en/areas", "to": "/en/service-areas", "status": 301 }
+  ]
+}

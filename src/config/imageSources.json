@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "src": "/src/assets/images/hero_travel_skyline_1795345579204.jpg",
+    "altBn": "আন্তর্জাতিক বিমানবন্দরের আধুনিক ডিপার্চার লাউঞ্জ থেকে সূর্যাস্তে বিদেশ যাত্রার দৃশ্য — Visatrip Global",
+    "altEn": "Modern international airport departure lounge at golden twilight — Visatrip Global",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 45%",
+    "mobileObjectPosition": "50% 40%",
+    "generateMobileCrop": true
+  },
+  "heroDubai": {
+    "src": "/src/assets/images/hero_dubai_twilight_1795357742845.jpg",
+    "altBn": "সন্ধ্যার সোনালি আলোয় দুবাই স্কাইলাইন ও বুর্জ খলিফা — বাংলাদেশ থেকে Dubai Tourist Visa ও ট্যুর প্যাকেজ",
+    "altEn": "Dubai downtown skyline and Burj Khalifa illuminated at blue hour twilight — Visatrip Global",
+    "mobileGravity": "East",
+    "objectPosition": "72% 45%",
+    "mobileObjectPosition": "75% 40%",
+    "generateMobileCrop": true
+  },
+  "heroIstanbul": {
+    "src": "/src/assets/images/hero_istanbul_bosphorus_1795357742916.jpg",
+    "altBn": "সূর্যাস্তে ইস্তাম্বুলের বসফরাস প্রণালী ও ঐতিহাসিক মসজিদ — তুরস্ক ও ইউরোপ ভিসা সাপোর্ট",
+    "altEn": "Golden twilight panoramic view across Istanbul Bosphorus toward historic mosque domes — Visatrip Global",
+    "mobileGravity": "East",
+    "objectPosition": "75% 50%",
+    "mobileObjectPosition": "75% 45%",
+    "generateMobileCrop": true
+  },
+  "heroMalaysia": {
+    "src": "/src/assets/images/hero_malaysia_skyline_1795357742808.jpg",
+    "altBn": "রাতের আলোকসজ্জায় কুয়ালালামপুরের পেট্রোনাস টুইন টাওয়ার — Malaysia Visa ও ট্যুর প্যাকেজ",
+    "altEn": "Kuala Lumpur Petronas Twin Towers illuminated at twilight — Visatrip Global",
+    "mobileGravity": "East",
+    "objectPosition": "78% 45%",
+    "mobileObjectPosition": "80% 40%",
+    "generateMobileCrop": true
+  },
+  "dubai": {
+    "src": "/src/assets/images/dest_dubai_skyline_1795345578262.jpg",
+    "altBn": "দুবাই স্কাইলাইন ও বুর্জ খলিফার সন্ধ্যার দৃশ্য — বাংলাদেশ থেকে Dubai Tourist Visa ও ট্যুর প্যাকেজ",
+    "altEn": "Dubai skyline and Burj Khalifa at twilight — Dubai Tourist Visa and Tour Package from Bangladesh",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 40%",
+    "mobileObjectPosition": "50% 40%",
+    "generateMobileCrop": true
+  },
+  "saudiArabia": {
+    "src": "/src/assets/images/dest_makkah_haram_1795345578205.jpg",
+    "altBn": "পবিত্র মক্কা শরীফ ও মসজিদুল হারামের শান্তিপূর্ণ সন্ধ্যার দৃশ্য — Visatrip Global হজ্জ ও ওমরাহ প্যাকেজ",
+    "altEn": "Serene twilight view of the Grand Mosque in Makkah — Visatrip Global Hajj & Umrah Packages",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 45%",
+    "mobileObjectPosition": "50% 45%",
+    "generateMobileCrop": true
+  },
+  "malaysia": {
+    "src": "/src/assets/images/dest_malaysia_towers_1795345579409.jpg",
+    "altBn": "কুয়ালালামপুর পেট্রোনাস টুইন টাওয়ারের রাতের আলোকসজ্জা — Malaysia Visa ও ট্যুর প্যাকেজ",
+    "altEn": "Kuala Lumpur Petronas Twin Towers evening skyline — Malaysia Visa and Tour Package",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 35%",
+    "mobileObjectPosition": "50% 35%",
+    "generateMobileCrop": true
+  },
+  "thailand": {
+    "src": "/src/assets/images/dest_thailand_bay_1795345578474.jpg",
+    "altBn": "থাইল্যান্ডের স্বচ্ছ সমুদ্র উপকূল ও ঐতিহাসিক লংটেইল নৌকা — Thailand Tourist Visa ও ট্যুর",
+    "altEn": "Turquoise coastal bay and traditional wooden boat in Thailand — Thailand Tourist Visa & Tour",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 55%",
+    "mobileObjectPosition": "50% 55%",
+    "generateMobileCrop": true
+  },
+  "singapore": {
+    "src": "/src/assets/images/dest_singapore_bay_1795345578265.jpg",
+    "altBn": "সিঙ্গাপুর মেরিনা বে ও গার্ডেনস বাই দ্য বে-র সন্ধ্যার দৃশ্য — Singapore Visa ও ভ্রমণ সেবা",
+    "altEn": "Singapore Marina Bay waterfront skyline at twilight — Singapore Visa and travel services",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 45%",
+    "mobileObjectPosition": "50% 45%",
+    "generateMobileCrop": true
+  },
+  "turkey": {
+    "src": "/src/assets/images/dest_turkey_istanbul_1795345578473.jpg",
+    "altBn": "তুরস্কের ইস্তাম্বুল বসফরাস প্রণালী ও ঐতিহাসিক মসজিদের সূর্যাস্ত — Turkey Visa ও ট্যুর প্যাকেজ",
+    "altEn": "Istanbul Bosphorus strait and historic mosque skyline at sunset — Turkey Visa and Tour",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 45%",
+    "mobileObjectPosition": "50% 45%",
+    "generateMobileCrop": true
+  },
+  "europe": {
+    "src": "/src/assets/images/dest_europe_canal_1795345578522.jpg",
+    "altBn": "ইউরোপের ঐতিহাসিক নদীর তীর ও স্থাপত্য — Schengen Tourist, Student ও Work Permit পরামর্শ",
+    "altEn": "Historic European riverfront architecture — Schengen Tourist, Student & Work Permit consultancy",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 50%",
+    "mobileObjectPosition": "50% 50%",
+    "generateMobileCrop": true
+  },
+  "india": {
+    "src": "/src/assets/images/dest_india_taj_1795345578158.jpg",
+    "altBn": "ভোরের আলোয় ভারতের তাজমহল — বাংলাদেশ থেকে ভারতীয় মেডিকেল ও ট্যুরিস্ট ভিসা প্রসেসিং",
+    "altEn": "Taj Mahal in soft sunrise light — India Medical and Tourist Visa processing from Bangladesh",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 45%",
+    "mobileObjectPosition": "50% 45%",
+    "generateMobileCrop": true
+  },
+  "office": {
+    "src": "/src/assets/images/office_agency_desk_1795345578112.jpg",
+    "altBn": "Visatrip Global-এর আধুনিক ও বিশ্বস্ত ট্রাভেল কনসালটেন্সি অফিস পরিবেশ",
+    "altEn": "Visatrip Global modern travel consultancy office consultation desk",
+    "mobileGravity": "Center",
+    "objectPosition": "50% 45%",
+    "mobileObjectPosition": "50% 45%",
+    "generateMobileCrop": true
+  }
+}

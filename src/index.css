@@ -1,0 +1,597 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B1F3A;
+  --color-navy-light: #153159;
+  --color-navy-deep: #071529;
+  --color-gold: #C9A24B;
+  --color-gold-hover: #D6B25E;
+  --color-gold-dark: #7D5D14;
+  --color-gold-text: #7D5D14;
+  --color-gold-on-hajj: #E2BE67;
+  --color-cream: #FAF8F4;
+  --color-hajj: #0F5132;
+  --color-hajj-dark: #0A3822;
+  --color-ink: #1A1A1A;
+  --color-muted: #525B68;
+
+  --font-bangla: "Hind Siliguri", "Noto Sans Bengali", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Hind Siliguri", "Noto Sans Bengali", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-bangla);
+    color: #1A1A1A;
+    background-color: #FAF8F4;
+    line-height: 1.75;
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(201, 162, 75, 0.16);
+  }
+
+  body {
+    line-height: 1.75;
+    font-size: 16px;
+    overflow-x: clip;
+  }
+
+  /* Prevent anchor jumps (#consultation, #book, etc.) from hiding under sticky navbar */
+  [id] {
+    scroll-margin-top: 76px;
+  }
+
+  @media (min-width: 1024px) {
+    [id] {
+      scroll-margin-top: 96px;
+    }
+  }
+
+  /* Guarantee >= 16px font size on mobile form inputs to prevent iOS Safari auto-zoom */
+  @media (max-width: 639px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px;
+    }
+  }
+
+  p,
+  li {
+    line-height: 1.75;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  /* Unified Lucide icon stroke weight across the entire site */
+  svg.lucide {
+    stroke-width: 1.75;
+  }
+
+  /* WCAG 2.1 AA High-Contrast Dual Focus Ring (>= 3:1 contrast on light & dark surfaces) */
+  :focus-visible {
+    outline: 3px solid #0B1F3A;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px #E2BE67;
+    border-radius: 4px;
+  }
+
+  /* Bright gold focus indicator inside dark navy/green surfaces */
+  .bg-navy-hero :focus-visible,
+  .bg-hajj-hero :focus-visible,
+  footer :focus-visible,
+  [data-dark-surface="true"] :focus-visible {
+    outline: 3px solid #E2BE67;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px #071529;
+  }
+
+  /* Restore navy focus indicator for light cards/forms nested inside dark heroes */
+  [data-dark-surface="false"] :focus-visible {
+    outline: 3px solid #0B1F3A;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px #E2BE67;
+  }
+}
+
+/* =========================================================
+   WCAG 2.1 AA SKIP LINK (visible on keyboard focus)
+   ========================================================= */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #0B1F3A;
+  color: #FFFFFF;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  border: 2px solid #E2BE67;
+  box-shadow: 0 12px 32px rgba(7, 21, 41, 0.35);
+  transform: translateY(-200%);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 3px solid #E2BE67;
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   BANGLA SCRIPT RENDERING (MATRA, CONJUNCTS & GLYPH SAFETY)
+   - Zero letter-spacing prevents fractured Matra & broken conjuncts
+   - OpenType shaping preserves complex Bengali ligatures (যুক্তাক্ষর)
+   - Generous line-height prevents clipping of vowel signs (ই/ঈ/উ/ঊ/রেফ)
+   ========================================================= */
+html:lang(bn) body,
+:lang(bn) {
+  font-kerning: normal;
+  font-feature-settings: "kern" 1, "liga" 1, "clig" 1;
+  text-rendering: optimizeLegibility;
+}
+
+html:lang(bn) h1,
+html:lang(bn) h2,
+html:lang(bn) h3,
+html:lang(bn) h4,
+html:lang(bn) p,
+html:lang(bn) a,
+html:lang(bn) button,
+html:lang(bn) span,
+html:lang(bn) li,
+html:lang(bn) label,
+html:lang(bn) th,
+html:lang(bn) td {
+  letter-spacing: 0 !important;
+}
+
+html:lang(bn) [lang="en"] {
+  letter-spacing: normal !important;
+}
+
+html:lang(bn) .heading-h1 {
+  line-height: 1.34;
+}
+
+html:lang(bn) .heading-h2 {
+  line-height: 1.4;
+}
+
+html:lang(bn) .heading-h3 {
+  line-height: 1.48;
+}
+
+html:lang(bn) .btn-primary,
+html:lang(bn) .btn-secondary,
+html:lang(bn) .btn-secondary-light,
+html:lang(bn) .btn-navy {
+  line-height: 1.42;
+}
+
+html:lang(bn) .line-clamp-2,
+html:lang(bn) .line-clamp-3 {
+  line-height: 1.75;
+  padding-block: 0.08em;
+}
+
+/* =========================================================
+   FLUID TYPOGRAPHY HIERARCHY (clamp() + Hind Siliguri safe)
+   ========================================================= */
+.font-editorial {
+  font-family: var(--font-serif), var(--font-bangla);
+}
+
+.heading-h1 {
+  font-size: clamp(1.875rem, 3.8vw, 3.375rem);
+  line-height: 1.24;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.heading-h2 {
+  font-size: clamp(1.4375rem, 2.5vw, 2.25rem);
+  line-height: 1.32;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+.heading-h3 {
+  font-size: clamp(1.125rem, 1.4vw, 1.3125rem);
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.body-lead {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.8;
+}
+
+.body-base {
+  font-size: 0.96875rem;
+  line-height: 1.78;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================
+   MOBILE SCROLL-SNAP CAROUSELS & SAFE-AREA HELPERS
+   ========================================================= */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.snap-carousel {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
+/* Hide global mobile bottom bar when a form input/keyboard is active */
+body.vtg-keyboard-open .vtg-mobile-bottom-bar {
+  transform: translate3d(0, 120%, 0);
+  pointer-events: none;
+}
+
+/* =========================================================
+   UNIFIED BUTTON SYSTEM (transform + opacity-only gold glow)
+   ========================================================= */
+.btn-primary,
+.btn-secondary,
+.btn-secondary-light,
+.btn-navy {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.25;
+  text-align: center;
+  cursor: pointer;
+  transform: translate3d(0, 0, 0);
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease;
+}
+
+@media (min-width: 400px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-secondary-light,
+  .btn-navy {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* GPU-composited gold glow aura via opacity-only ::after layer */
+.btn-primary::after,
+.btn-secondary::after,
+.btn-secondary-light::after,
+.btn-navy::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #D3AE5A 0%, #C9A24B 100%);
+  color: #0B1F3A;
+  font-weight: 700;
+  border: 1px solid rgba(201, 162, 75, 0.85);
+  box-shadow: 0 6px 18px rgba(201, 162, 75, 0.22);
+}
+
+.btn-primary::after {
+  box-shadow: 0 10px 28px rgba(201, 162, 75, 0.48), 0 0 0 1px rgba(214, 178, 94, 0.55);
+}
+
+.btn-primary:active {
+  transform: scale(0.985) translate3d(0, 0, 0);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-primary:disabled::after {
+  opacity: 0;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #0B1F3A;
+  font-weight: 600;
+  border: 1.5px solid rgba(11, 31, 58, 0.28);
+}
+
+.btn-secondary::after {
+  box-shadow: 0 8px 22px rgba(201, 162, 75, 0.28), 0 0 0 1px rgba(201, 162, 75, 0.45);
+}
+
+.btn-secondary:active {
+  transform: scale(0.985) translate3d(0, 0, 0);
+}
+
+.btn-secondary-light {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #FFFFFF;
+  font-weight: 600;
+  border: 1.5px solid rgba(255, 255, 255, 0.32);
+}
+
+.btn-secondary-light::after {
+  box-shadow: 0 8px 24px rgba(201, 162, 75, 0.32), 0 0 0 1px rgba(201, 162, 75, 0.5);
+}
+
+.btn-secondary-light:active {
+  transform: scale(0.985) translate3d(0, 0, 0);
+}
+
+.btn-navy {
+  background: linear-gradient(180deg, #122D54 0%, #0B1F3A 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  border: 1px solid rgba(11, 31, 58, 0.9);
+  box-shadow: 0 6px 18px rgba(11, 31, 58, 0.16);
+}
+
+.btn-navy::after {
+  box-shadow: 0 10px 26px rgba(201, 162, 75, 0.3), 0 0 0 1px rgba(201, 162, 75, 0.45);
+}
+
+.btn-navy:active {
+  transform: scale(0.985) translate3d(0, 0, 0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover {
+    background: linear-gradient(180deg, #DDB968 0%, #CFA850 100%);
+    transform: translate3d(0, -2px, 0);
+  }
+  .btn-primary:hover::after {
+    opacity: 1;
+  }
+
+  .btn-secondary:hover {
+    background-color: #0B1F3A;
+    border-color: #C9A24B;
+    color: #FFFFFF;
+    transform: translate3d(0, -2px, 0);
+  }
+  .btn-secondary:hover::after {
+    opacity: 1;
+  }
+
+  .btn-secondary-light:hover {
+    border-color: #C9A24B;
+    background-color: rgba(201, 162, 75, 0.14);
+    color: #FAF8F4;
+    transform: translate3d(0, -2px, 0);
+  }
+  .btn-secondary-light:hover::after {
+    opacity: 1;
+  }
+
+  .btn-navy:hover {
+    background: linear-gradient(180deg, #183A6B 0%, #102A4E 100%);
+    border-color: rgba(201, 162, 75, 0.6);
+    transform: translate3d(0, -2px, 0);
+  }
+  .btn-navy:hover::after {
+    opacity: 1;
+  }
+}
+
+.btn-sm {
+  min-height: 44px;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 400px) {
+  .btn-sm {
+    padding: 0.625rem 1.125rem;
+  }
+}
+
+/* =========================================================
+   UNIFIED CARD ELEVATION & ATMOSPHERIC BACKDROPS
+   ========================================================= */
+.card-surface {
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  box-shadow: 0 4px 20px rgba(11, 31, 58, 0.045);
+}
+
+.card-interactive {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  box-shadow: 0 4px 20px rgba(11, 31, 58, 0.045);
+  transform: translate3d(0, 0, 0);
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 220ms ease;
+}
+
+.card-interactive::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0 16px 36px rgba(11, 31, 58, 0.1), 0 0 0 1px rgba(201, 162, 75, 0.45);
+  transition: opacity 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-interactive:hover {
+    border-color: rgba(201, 162, 75, 0.72);
+    transform: translate3d(0, -3px, 0);
+  }
+
+  .card-interactive:hover::after {
+    opacity: 1;
+  }
+
+  .group:hover .card-img-zoom {
+    transform: scale(1.06) translateZ(0);
+  }
+}
+
+/* GPU-accelerated card image hover zoom (< 400ms) */
+.card-img-zoom {
+  transform: scale(1) translateZ(0);
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+/* Smooth accordion disclosure (zero JS height measurement / layout thrash) */
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.accordion-panel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.accordion-panel > div {
+  overflow: hidden;
+}
+
+.bg-navy-hero {
+  background-color: #0B1F3A;
+  background-image:
+    radial-gradient(ellipse 65% 55% at 85% 15%, rgba(201, 162, 75, 0.14) 0%, transparent 70%),
+    linear-gradient(135deg, #071529 0%, #0B1F3A 55%, #132E54 100%);
+}
+
+.bg-hajj-hero {
+  background-color: #0F5132;
+  background-image:
+    radial-gradient(ellipse 60% 55% at 85% 20%, rgba(201, 162, 75, 0.16) 0%, transparent 70%),
+    linear-gradient(135deg, #093520 0%, #0F5132 58%, #14633E 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-secondary-light:hover,
+  .btn-navy:hover,
+  .card-interactive:hover,
+  .group:hover .card-img-zoom {
+    transform: none !important;
+  }
+}
+
+/* Defer layout & paint for below-the-fold sections (zero CLS via intrinsic placeholder height) */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 560px;
+}
+
+/* =========================================================
+   BRANDED SKELETON SHIMMER (compositor-only, reduced-motion safe)
+   ========================================================= */
+@keyframes vtg-shimmer {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.skeleton-shimmer,
+.skeleton-shimmer-dark {
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-shimmer {
+  background-color: #EBE7DE;
+}
+
+.skeleton-shimmer-dark {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.skeleton-shimmer::after,
+.skeleton-shimmer-dark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate3d(-100%, 0, 0);
+  animation: vtg-shimmer 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.skeleton-shimmer::after {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.65) 50%,
+    transparent 100%
+  );
+}
+
+.skeleton-shimmer-dark::after {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(201, 162, 75, 0.22) 50%,
+    transparent 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer::after,
+  .skeleton-shimmer-dark::after {
+    display: none;
+  }
+}
+
+
