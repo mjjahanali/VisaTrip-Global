@@ -253,8 +253,8 @@ export function Navbar({ onOpenConsultation }: { onOpenConsultation: () => void 
             </div>
           </m.div>
 
-          {/* Main Sticky Navbar (min-height safe for 200% text resize) */}
-          <div className="relative max-w-[1200px] mx-auto px-3.5 sm:px-6 min-h-14 lg:min-h-[72px] py-1.5 flex flex-wrap items-center justify-between gap-3 lg:gap-6">
+          {/* Main Sticky Navbar (single-row mobile friendly, min-height safe for 200% text resize) */}
+          <div className="relative max-w-[1200px] mx-auto px-3.5 sm:px-6 min-h-14 lg:min-h-[72px] py-1.5 flex items-center justify-between gap-2 lg:gap-6">
             <Link
               to={localizedPath('/')}
               aria-current={isActive('/') ? 'page' : undefined}
@@ -418,16 +418,18 @@ export function Navbar({ onOpenConsultation }: { onOpenConsultation: () => void 
 
             {/* Primary Action + Mobile Controls (all >= 44x44px) */}
             <div className="flex items-center gap-2 shrink-0">
-              <m.button
-                type="button"
-                onClick={onOpenConsultation}
-                initial={false}
-                animate={{ scale: scrolled ? 0.96 : 1 }}
-                transition={{ duration: 0.24, ease: MOTION_EASE }}
-                className="hidden lg:inline-flex btn-primary btn-sm origin-right"
-              >
-                {t('ফ্রি কনসাল্টেশন নিন', 'Free Consultation')}
-              </m.button>
+              <div className="hidden lg:flex items-center">
+                <m.button
+                  type="button"
+                  onClick={onOpenConsultation}
+                  initial={false}
+                  animate={{ scale: scrolled ? 0.96 : 1 }}
+                  transition={{ duration: 0.24, ease: MOTION_EASE }}
+                  className="btn-primary btn-sm origin-right"
+                >
+                  {t('ফ্রি কনসাল্টেশন নিন', 'Free Consultation')}
+                </m.button>
+              </div>
 
               <button
                 type="button"
