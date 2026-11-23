@@ -67,6 +67,7 @@ export function DestinationCard({ destination }: { destination: DestinationSumma
       <div className="relative aspect-[4/3] overflow-hidden bg-[#0B1F3A]">
         <SafeImage
           imageKey={destination.imageKey}
+          destinationSlug={destination.slug}
           preset="destinationCard"
           className="w-full h-full object-cover card-img-zoom"
         />

@@ -484,6 +484,1686 @@ export const destinationSummaries: DestinationSummary[] = [
       "Return flight ticket & confirmed hotel booking",
       "Passport-size photographs"
     ]
+  },
+  {
+    "slug": "qatar",
+    "imageKey": "dubai",
+    "featuredOnHome": false,
+    "nameBn": "কাতার",
+    "nameEn": "Qatar",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "দোহা কর্নিশ, আধুনিক স্থাপত্য, ফ্যামিলি ভিজিট ও বৈধ কর্মসংস্থান",
+    "taglineEn": "Doha skyline, museums, family visits, and employment hub",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাদা ব্যাকগ্রাউন্ডের রঙিন ছবি",
+      "ভিজিট ভিসার জন্য ৬ মাসের ব্যাংক স্টেটমেন্ট, পেশার প্রমাণপত্র ও রিটার্ন বুকিং",
+      "Work Permit-এর ক্ষেত্রে পুলিশ ক্লিয়ারেন্স ও অনুমোদিত মেডিকেল (GAMCA/Wafid)",
+      "হোটেল বুকিং অথবা অনুমোদিত স্পন্সরের আমন্ত্রণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and white-background color photos",
+      "For Visit Visa: 6-month Bank Statement, occupation proof & return itinerary",
+      "For Work Permit: Police Clearance & authorized medical report (GAMCA/Wafid)",
+      "Confirmed hotel booking or approved sponsor invitation details"
+    ]
+  },
+  {
+    "slug": "oman",
+    "imageKey": "saudiArabia",
+    "featuredOnHome": false,
+    "nameBn": "ওমান",
+    "nameEn": "Oman",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "মাস্কাটের শান্ত সৌন্দর্য, সালালাহ প্রকৃতি ও বৈধ কর্মসংস্থান",
+    "taglineEn": "Muscat coastal heritage, Salalah greenery & Gulf career opportunities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাদা ব্যাকগ্রাউন্ডের রঙিন ছবি",
+      "ভিজিট ভিসার জন্য ৬ মাসের ব্যাংক স্টেটমেন্ট, পেশার প্রমাণপত্র ও রিটার্ন বুকিং",
+      "Work Permit-এর ক্ষেত্রে পুলিশ ক্লিয়ারেন্স ও অনুমোদিত মেডিকেল (GAMCA/Wafid)",
+      "হোটেল বুকিং অথবা অনুমোদিত স্পন্সরের আমন্ত্রণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and white-background color photos",
+      "For Visit Visa: 6-month Bank Statement, occupation proof & return itinerary",
+      "For Work Permit: Police Clearance & authorized medical report (GAMCA/Wafid)",
+      "Confirmed hotel booking or approved sponsor invitation details"
+    ]
+  },
+  {
+    "slug": "kuwait",
+    "imageKey": "dubai",
+    "featuredOnHome": false,
+    "nameBn": "কুয়েত",
+    "nameEn": "Kuwait",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "কুয়েত সিটি, পারিবারিক ভিজিট ও দক্ষ কর্মীদের নির্ভরযোগ্য গন্তব্য",
+    "taglineEn": "Kuwait City commerce, family visits & skilled workforce destination",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাদা ব্যাকগ্রাউন্ডের রঙিন ছবি",
+      "ভিজিট ভিসার জন্য ৬ মাসের ব্যাংক স্টেটমেন্ট, পেশার প্রমাণপত্র ও রিটার্ন বুকিং",
+      "Work Permit-এর ক্ষেত্রে পুলিশ ক্লিয়ারেন্স ও অনুমোদিত মেডিকেল (GAMCA/Wafid)",
+      "হোটেল বুকিং অথবা অনুমোদিত স্পন্সরের আমন্ত্রণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and white-background color photos",
+      "For Visit Visa: 6-month Bank Statement, occupation proof & return itinerary",
+      "For Work Permit: Police Clearance & authorized medical report (GAMCA/Wafid)",
+      "Confirmed hotel booking or approved sponsor invitation details"
+    ]
+  },
+  {
+    "slug": "bahrain",
+    "imageKey": "dubai",
+    "featuredOnHome": false,
+    "nameBn": "বাহরাইন",
+    "nameEn": "Bahrain",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "মানামার আধুনিক দ্বীপ-নগরী, ব্যবসা ও উপসাগরীয় ভ্রমণ",
+    "taglineEn": "Manama island heritage, Gulf business & accessible e-Visa options",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাদা ব্যাকগ্রাউন্ডের রঙিন ছবি",
+      "ভিজিট ভিসার জন্য ৬ মাসের ব্যাংক স্টেটমেন্ট, পেশার প্রমাণপত্র ও রিটার্ন বুকিং",
+      "Work Permit-এর ক্ষেত্রে পুলিশ ক্লিয়ারেন্স ও অনুমোদিত মেডিকেল (GAMCA/Wafid)",
+      "হোটেল বুকিং অথবা অনুমোদিত স্পন্সরের আমন্ত্রণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and white-background color photos",
+      "For Visit Visa: 6-month Bank Statement, occupation proof & return itinerary",
+      "For Work Permit: Police Clearance & authorized medical report (GAMCA/Wafid)",
+      "Confirmed hotel booking or approved sponsor invitation details"
+    ]
+  },
+  {
+    "slug": "jordan",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "জর্ডান",
+    "nameEn": "Jordan",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "পেত্রা, ডেড সি, ওয়াদি রাম এবং ইসলামী ও প্রাচীন ঐতিহ্য",
+    "taglineEn": "Petra Rose City, Dead Sea, Wadi Rum & historic Levantine heritage",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "egypt",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "মিশর (ইজিপ্ট)",
+    "nameEn": "Egypt",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "গিজার পিরামিড, নীলনদ, কায়রো ও আল-আজহার ঐতিহ্য",
+    "taglineEn": "Pyramids of Giza, Nile River cruises, Cairo & historic Islamic heritage",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "iraq",
+    "imageKey": "saudiArabia",
+    "featuredOnHome": false,
+    "nameBn": "ইরাক",
+    "nameEn": "Iraq",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "বাগদাদ, নাজাফ ও কারবালার ধর্মীয় জিয়ারত এবং ঐতিহাসিক সফর",
+    "taglineEn": "Baghdad, Najaf & Karbala heritage Ziyarah and guided group travel",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাদা ব্যাকগ্রাউন্ডের রঙিন ছবি",
+      "ভিজিট ভিসার জন্য ৬ মাসের ব্যাংক স্টেটমেন্ট, পেশার প্রমাণপত্র ও রিটার্ন বুকিং",
+      "Work Permit-এর ক্ষেত্রে পুলিশ ক্লিয়ারেন্স ও অনুমোদিত মেডিকেল (GAMCA/Wafid)",
+      "হোটেল বুকিং অথবা অনুমোদিত স্পন্সরের আমন্ত্রণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and white-background color photos",
+      "For Visit Visa: 6-month Bank Statement, occupation proof & return itinerary",
+      "For Work Permit: Police Clearance & authorized medical report (GAMCA/Wafid)",
+      "Confirmed hotel booking or approved sponsor invitation details"
+    ]
+  },
+  {
+    "slug": "sri-lanka",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "শ্রীলঙ্কা",
+    "nameEn": "Sri Lanka",
+    "regionBn": "দক্ষিণ এশিয়া",
+    "regionEn": "South Asia",
+    "taglineBn": "কলম্বো, ক্যান্ডি, নুয়ারা এলিয়া ও বেনটোটা সমুদ্রসৈকত",
+    "taglineEn": "Colombo, Kandy hills, Nuwara Eliya tea estates & golden beaches",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও পাসপোর্ট সাইজ ছবি",
+      "কনফার্ম রিটার্ন এয়ার টিকেট ও হোটেল/রিসোর্ট ভাউচার",
+      "প্রযোজ্য অনলাইন ট্রাভেল ডিক্লারেশন বা ETA অনুমোদন কপি",
+      "ভ্রমণ ব্যয়ের জন্য পর্যাপ্ত ডলার এনডোর্সমেন্ট বা আন্তর্জাতিক কার্ড"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and passport-size photographs",
+      "Confirmed return air ticket and hotel/resort booking voucher",
+      "Applicable online travel declaration or ETA approval copy",
+      "Sufficient travel funds via dollar endorsement or international card"
+    ]
+  },
+  {
+    "slug": "bhutan",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "ভুটান",
+    "nameEn": "Bhutan",
+    "regionBn": "দক্ষিণ এশিয়া",
+    "regionEn": "South Asia",
+    "taglineBn": "থিম্পু, পারো, পুনাখা ও হিমালয়ের নির্মল শান্ত প্রকৃতি",
+    "taglineEn": "Thimphu, Paro Valley, Tiger’s Nest & serene Himalayan landscapes",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও পাসপোর্ট সাইজ ছবি",
+      "কনফার্ম রিটার্ন এয়ার টিকেট ও হোটেল/রিসোর্ট ভাউচার",
+      "প্রযোজ্য অনলাইন ট্রাভেল ডিক্লারেশন বা ETA অনুমোদন কপি",
+      "ভ্রমণ ব্যয়ের জন্য পর্যাপ্ত ডলার এনডোর্সমেন্ট বা আন্তর্জাতিক কার্ড"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and passport-size photographs",
+      "Confirmed return air ticket and hotel/resort booking voucher",
+      "Applicable online travel declaration or ETA approval copy",
+      "Sufficient travel funds via dollar endorsement or international card"
+    ]
+  },
+  {
+    "slug": "pakistan",
+    "imageKey": "india",
+    "featuredOnHome": false,
+    "nameBn": "পাকিস্তান",
+    "nameEn": "Pakistan",
+    "regionBn": "দক্ষিণ এশিয়া",
+    "regionEn": "South Asia",
+    "taglineBn": "হুনজা, স্কার্দু, ইসলামাবাদ ও লাহোরের পাহাড় ও ঐতিহ্য",
+    "taglineEn": "Hunza Valley, Skardu peaks, Islamabad & Lahore Mughal heritage",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "indonesia",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "ইন্দোনেশিয়া (বালি)",
+    "nameEn": "Indonesia (Bali)",
+    "regionBn": "দক্ষিণ-পূর্ব এশিয়া",
+    "regionEn": "Southeast Asia",
+    "taglineBn": "বালি দ্বীপের হানিমুন রিসোর্ট, উবুদ প্রকৃতি ও জাকার্তা ভ্রমণ",
+    "taglineEn": "Bali honeymoon villas, Ubud rice terraces, Nusa Penida & Jakarta",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "vietnam",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "ভিয়েতনাম",
+    "nameEn": "Vietnam",
+    "regionBn": "দক্ষিণ-পূর্ব এশিয়া",
+    "regionEn": "Southeast Asia",
+    "taglineBn": "হালং বে ক্রুজ, হ্যানয়, দা নাং গোল্ডেন ব্রিজ ও ফু কুয়োক",
+    "taglineEn": "Ha Long Bay cruises, Hanoi, Da Nang Golden Bridge & Ho Chi Minh City",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "cambodia",
+    "imageKey": "malaysia",
+    "featuredOnHome": false,
+    "nameBn": "কম্বোডিয়া",
+    "nameEn": "Cambodia",
+    "regionBn": "দক্ষিণ-পূর্ব এশিয়া",
+    "regionEn": "Southeast Asia",
+    "taglineBn": "আংকোর ওয়াট, সিয়েম রিপ ও নমপেনের প্রাচীন ঐতিহ্য ভ্রমণ",
+    "taglineEn": "Angkor Wat heritage complex, Siem Reap & Phnom Penh riverside",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "philippines",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "ফিলিপাইন",
+    "nameEn": "Philippines",
+    "regionBn": "দক্ষিণ-পূর্ব এশিয়া",
+    "regionEn": "Southeast Asia",
+    "taglineBn": "ম্যানিলা, বোরাকায়, পালাওয়ান ও ৭ হাজারের বেশি দ্বীপের দেশ",
+    "taglineEn": "Manila, Boracay white sands, Palawan lagoons & Cebu islands",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "brunei",
+    "imageKey": "malaysia",
+    "featuredOnHome": false,
+    "nameBn": "ব্রুনাই",
+    "nameEn": "Brunei",
+    "regionBn": "দক্ষিণ-পূর্ব এশিয়া",
+    "regionEn": "Southeast Asia",
+    "taglineBn": "শান্তিপূর্ণ ইসলামী ঐতিহ্য, বন্দর সেরি বেগাওয়ান ও বৈধ কর্মসংস্থান",
+    "taglineEn": "Peaceful Islamic architecture, Bandar Seri Begawan & work opportunities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "laos",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "লাওস",
+    "nameEn": "Laos",
+    "regionBn": "দক্ষিণ-পূর্ব এশিয়া",
+    "regionEn": "Southeast Asia",
+    "taglineBn": "লুয়াং প্রাবাং, ভিয়েনতিয়েন ও মেকং নদীর শান্ত প্রকৃতি",
+    "taglineEn": "Luang Prabang waterfalls, Vientiane & tranquil Mekong scenery",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "myanmar",
+    "imageKey": "malaysia",
+    "featuredOnHome": false,
+    "nameBn": "মিয়ানমার",
+    "nameEn": "Myanmar",
+    "regionBn": "দক্ষিণ-পূর্ব এশিয়া",
+    "regionEn": "Southeast Asia",
+    "taglineBn": "ইয়াঙ্গুন, বাগান ও ব্যবসায়িক সফরের জন্য প্রতিবেশী গন্তব্য",
+    "taglineEn": "Yangon commerce, Bagan heritage & neighboring business travel",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "japan",
+    "imageKey": "singapore",
+    "featuredOnHome": false,
+    "nameBn": "জাপান",
+    "nameEn": "Japan",
+    "regionBn": "পূর্ব এশিয়া",
+    "regionEn": "East Asia",
+    "taglineBn": "টোকিও, কিয়োটো, মাউন্ট ফুজি, উচ্চশিক্ষা ও দক্ষ ক্যারিয়ার",
+    "taglineEn": "Tokyo, Kyoto cherry blossoms, Mount Fuji, study & skilled careers",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও নির্ধারিত মাপের রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, ব্যাংক সলভেন্সি ও আয়কর সনদ (TIN)",
+      "পেশার প্রমাণপত্র (NOC / Trade License / Student ID) ও ভ্রমণ সূচি",
+      "কনফার্ম ফ্লাইট-হোটেল রিজার্ভেশন (প্রযোজ্য ক্ষেত্রে ইনভিটেশন লেটার)"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months) and embassy-spec color photographs",
+      "6-month Bank Statement, Solvency Certificate & Tax documents (TIN)",
+      "Occupation proof (NOC / Trade License / Student ID) & travel itinerary",
+      "Confirmed flight/hotel bookings (plus invitation letter if applicable)"
+    ]
+  },
+  {
+    "slug": "south-korea",
+    "imageKey": "singapore",
+    "featuredOnHome": false,
+    "nameBn": "দক্ষিণ কোরিয়া",
+    "nameEn": "South Korea",
+    "regionBn": "পূর্ব এশিয়া",
+    "regionEn": "East Asia",
+    "taglineBn": "সিউল, বুসান, জেজু দ্বীপ এবং বিশ্বমানের বিশ্ববিদ্যালয় ও প্রযুক্তি",
+    "taglineEn": "Seoul palaces, Busan coastline, Jeju Island & global universities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও নির্ধারিত মাপের রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, ব্যাংক সলভেন্সি ও আয়কর সনদ (TIN)",
+      "পেশার প্রমাণপত্র (NOC / Trade License / Student ID) ও ভ্রমণ সূচি",
+      "কনফার্ম ফ্লাইট-হোটেল রিজার্ভেশন (প্রযোজ্য ক্ষেত্রে ইনভিটেশন লেটার)"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months) and embassy-spec color photographs",
+      "6-month Bank Statement, Solvency Certificate & Tax documents (TIN)",
+      "Occupation proof (NOC / Trade License / Student ID) & travel itinerary",
+      "Confirmed flight/hotel bookings (plus invitation letter if applicable)"
+    ]
+  },
+  {
+    "slug": "china",
+    "imageKey": "singapore",
+    "featuredOnHome": false,
+    "nameBn": "চীন (China)",
+    "nameEn": "China",
+    "regionBn": "পূর্ব এশিয়া",
+    "regionEn": "East Asia",
+    "taglineBn": "গুয়াংজু, বেইজিং, সাংহাই — ব্যবসা, ক্যান্টন ফেয়ার, উচ্চশিক্ষা ও ভ্রমণ",
+    "taglineEn": "Guangzhou trade, Beijing, Shanghai, Canton Fair & university study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও নির্ধারিত মাপের রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, ব্যাংক সলভেন্সি ও আয়কর সনদ (TIN)",
+      "পেশার প্রমাণপত্র (NOC / Trade License / Student ID) ও ভ্রমণ সূচি",
+      "কনফার্ম ফ্লাইট-হোটেল রিজার্ভেশন (প্রযোজ্য ক্ষেত্রে ইনভিটেশন লেটার)"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months) and embassy-spec color photographs",
+      "6-month Bank Statement, Solvency Certificate & Tax documents (TIN)",
+      "Occupation proof (NOC / Trade License / Student ID) & travel itinerary",
+      "Confirmed flight/hotel bookings (plus invitation letter if applicable)"
+    ]
+  },
+  {
+    "slug": "hong-kong",
+    "imageKey": "singapore",
+    "featuredOnHome": false,
+    "nameBn": "হংকং",
+    "nameEn": "Hong Kong",
+    "regionBn": "পূর্ব এশিয়া",
+    "regionEn": "East Asia",
+    "taglineBn": "ভিক্টোরিয়া পিক, ডিজনি ল্যান্ড, ব্যবসা ও আন্তর্জাতিক এক্সপো",
+    "taglineEn": "Victoria Peak, Hong Kong Disneyland, trade expos & harbor views",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও নির্ধারিত মাপের রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, ব্যাংক সলভেন্সি ও আয়কর সনদ (TIN)",
+      "পেশার প্রমাণপত্র (NOC / Trade License / Student ID) ও ভ্রমণ সূচি",
+      "কনফার্ম ফ্লাইট-হোটেল রিজার্ভেশন (প্রযোজ্য ক্ষেত্রে ইনভিটেশন লেটার)"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months) and embassy-spec color photographs",
+      "6-month Bank Statement, Solvency Certificate & Tax documents (TIN)",
+      "Occupation proof (NOC / Trade License / Student ID) & travel itinerary",
+      "Confirmed flight/hotel bookings (plus invitation letter if applicable)"
+    ]
+  },
+  {
+    "slug": "taiwan",
+    "imageKey": "singapore",
+    "featuredOnHome": false,
+    "nameBn": "তাইওয়ান",
+    "nameEn": "Taiwan",
+    "regionBn": "পূর্ব এশিয়া",
+    "regionEn": "East Asia",
+    "taglineBn": "তাইপে ১০১, আধুনিক প্রযুক্তি, বাণিজ্য মেলা ও প্রাকৃতিক সৌন্দর্য",
+    "taglineEn": "Taipei 101, tech expos, Taroko landscapes & academic excellence",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও নির্ধারিত মাপের রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, ব্যাংক সলভেন্সি ও আয়কর সনদ (TIN)",
+      "পেশার প্রমাণপত্র (NOC / Trade License / Student ID) ও ভ্রমণ সূচি",
+      "কনফার্ম ফ্লাইট-হোটেল রিজার্ভেশন (প্রযোজ্য ক্ষেত্রে ইনভিটেশন লেটার)"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months) and embassy-spec color photographs",
+      "6-month Bank Statement, Solvency Certificate & Tax documents (TIN)",
+      "Occupation proof (NOC / Trade License / Student ID) & travel itinerary",
+      "Confirmed flight/hotel bookings (plus invitation letter if applicable)"
+    ]
+  },
+  {
+    "slug": "azerbaijan",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "আজারবাইজান",
+    "nameEn": "Azerbaijan",
+    "regionBn": "ইউরোপ ও এশিয়া",
+    "regionEn": "Eurasia",
+    "taglineBn": "বাকু ফ্লেম টাওয়ার্স, শাহদাগ স্কি রিসোর্ট ও সহজ ASAN e-Visa",
+    "taglineEn": "Baku Flame Towers, Shahdag mountains & fast ASAN e-Visa",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "georgia",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "জর্জিয়া",
+    "nameEn": "Georgia",
+    "regionBn": "ইউরোপ ও এশিয়া",
+    "regionEn": "Eurasia",
+    "taglineBn": "তিবিলিসি, কাজবেগি পর্বতমালা, বাতুমি ও ককেশাসের ইউরোপীয় সৌন্দর্য",
+    "taglineEn": "Tbilisi Old Town, Kazbegi Caucasus peaks & Batumi coastline",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "uzbekistan",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "উজবেকিস্তান",
+    "nameEn": "Uzbekistan",
+    "regionBn": "ইউরোপ ও এশিয়া",
+    "regionEn": "Eurasia",
+    "taglineBn": "সমরকন্দ, বুখারা, তাসখন্দ — সিল্ক রোড ও ইমাম বুখারী (রহ.) ঐতিহ্য",
+    "taglineEn": "Samarkand, Bukhara & Tashkent Silk Road Islamic heritage",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "kazakhstan",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "কাজাখস্তান",
+    "nameEn": "Kazakhstan",
+    "regionBn": "ইউরোপ ও এশিয়া",
+    "regionEn": "Eurasia",
+    "taglineBn": "আলমাটি, বিগ আলমাটি লেক, শিমবুলাক ও আধুনিক আস্তানা",
+    "taglineEn": "Almaty alpine lakes, Shymbulak snow resort & futuristic Astana",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "russia",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "রাশিয়া",
+    "nameEn": "Russia",
+    "regionBn": "ইউরোপ ও এশিয়া",
+    "regionEn": "Eurasia",
+    "taglineBn": "মস্কো, সেন্ট পিটার্সবার্গ ও উচ্চশিক্ষা (মেডিকেল ও ইঞ্জিনিয়ারিং)",
+    "taglineEn": "Moscow Red Square, St. Petersburg & medical/engineering universities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "united-kingdom",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "যুক্তরাজ্য (UK)",
+    "nameEn": "United Kingdom (UK)",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "লন্ডন, ম্যানচেস্টার, এডিনবরা — ফ্যামিলি ভিজিট ও বিশ্বসেরা উচ্চশিক্ষা",
+    "taglineEn": "London, Edinburgh, family visits & world-renowned UK universities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট ও পূর্ববর্তী ট্রাভেল হিস্ট্রির সকল কপি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, আয়ের উৎস ও সঞ্চয়ের প্রমাণপত্র",
+      "চাকরির NOC, পে-স্লিপ বা ব্যবসায়ীর Trade License ও আয়কর রিটার্ন",
+      "স্টুডেন্ট ভিসার ক্ষেত্রে CAS/Offer Letter, IELTS ও টিউশন ফান্ড ডকুমেন্ট"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport and complete copies of previous travel history",
+      "6-month Bank Statement, verified income source & savings evidence",
+      "Job NOC & payslips, or Trade License and Tax Return for business owners",
+      "For Study: CAS/Offer Letter, English test score & tuition fund proof"
+    ]
+  },
+  {
+    "slug": "italy",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "ইতালি",
+    "nameEn": "Italy",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "রোম, ভেনিস, মিলান, ফ্লোরেন্স — শেনজেন ভ্রমণ, উচ্চশিক্ষা ও Work Permit",
+    "taglineEn": "Rome, Venice, Milan, Florence — Schengen travel, study & work guidance",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "france",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "ফ্রান্স",
+    "nameEn": "France",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "প্যারিস আইফেল টাওয়ার, ফ্রেঞ্চ রিভেরা, শেনজেন ভ্রমণ ও উচ্চশিক্ষা",
+    "taglineEn": "Paris Eiffel Tower, French Riviera, Schengen tourism & study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "germany",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "জার্মানি",
+    "nameEn": "Germany",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "টিউশন-ফ্রি পাবলিক বিশ্ববিদ্যালয়, বার্লিন-মিউনিখ ও দক্ষ ক্যারিয়ার",
+    "taglineEn": "Tuition-free public universities, Berlin/Munich & Opportunity Card",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "spain",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "স্পেন",
+    "nameEn": "Spain",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "বার্সেলোনা, মাদ্রিদ, কর্ডোবা-গ্রানাডার আন্দালুসীয় ঐতিহ্য ও ভ্রমণ",
+    "taglineEn": "Barcelona, Madrid, Granada Alhambra & Mediterranean sunshine",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "switzerland",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "সুইজারল্যান্ড",
+    "nameEn": "Switzerland",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ইন্টারলাকেন, জুরিখ, লুসার্ন ও আল্পসের তুষারাবৃত স্বর্গীয় প্রকৃতি",
+    "taglineEn": "Interlaken, Zurich, Lucerne, Mount Titlis & Swiss Alps railways",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "netherlands",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "নেদারল্যান্ডস",
+    "nameEn": "Netherlands",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "আমস্টারডাম ক্যানাল, টিউলিপ গার্ডেন, ব্যবসা ও ইংরেজি উচ্চশিক্ষা",
+    "taglineEn": "Amsterdam canals, Keukenhof tulips, trade & English-taught degrees",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "portugal",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "পর্তুগাল",
+    "nameEn": "Portugal",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "লিসবন, পোর্তো, আলগারভ উপকূল ও ইউরোপীয় ভ্রমণ-উচ্চশিক্ষা",
+    "taglineEn": "Lisbon hills, Porto riverside, Algarve coast & European study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "greece",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "গ্রিস",
+    "nameEn": "Greece",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "এথেন্স অ্যাক্রোপলিস, সান্তোরিনি ও মিকোনোসের নীল-সাদা দ্বীপ",
+    "taglineEn": "Athens Acropolis, Santorini sunsets & Aegean island escapes",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "poland",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "পোল্যান্ড",
+    "nameEn": "Poland",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ওয়ারশ, ক্রাকো — সাশ্রয়ী ইউরোপীয় উচ্চশিক্ষা ও বৈধ Work Permit",
+    "taglineEn": "Warsaw & Krakow — affordable EU universities & Work Permit pathways",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "romania",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "রোমানিয়া",
+    "nameEn": "Romania",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "বুখারেস্ট, ট্রান্সিলভানিয়া — শেনজেন ভ্রমণ, উচ্চশিক্ষা ও Work Permit",
+    "taglineEn": "Bucharest, Transylvania — EU Schengen access, study & Work Permits",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "hungary",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "হাঙ্গেরি",
+    "nameEn": "Hungary",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "বুদাপেস্ট দানিউব নদী, স্টাইপেন্ডিয়াম হাঙ্গারিকাম ও উচ্চশিক্ষা",
+    "taglineEn": "Budapest Danube views, Stipendium Hungaricum & European study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "sweden",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "সুইডেন",
+    "nameEn": "Sweden",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "স্টকহোম, উদ্ভাবনী উচ্চশিক্ষা ও নর্ডিক শেনজেন ভ্রমণ",
+    "taglineEn": "Stockholm archipelago, innovation-led universities & Nordic travel",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "finland",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "ফিনল্যান্ড",
+    "nameEn": "Finland",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "হেলসিঙ্কি, ল্যাপল্যান্ড নর্দার্ন লাইটস ও বিশ্বসেরা শিক্ষাব্যবস্থা",
+    "taglineEn": "Helsinki, Lapland Northern Lights & world-leading education",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "denmark",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "ডেনমার্ক",
+    "nameEn": "Denmark",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "কোপেনহেগেন, আধুনিক নর্ডিক জীবনধারা ও উচ্চমানের উচ্চশিক্ষা",
+    "taglineEn": "Copenhagen harbor, Nordic design & high-ranking universities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "norway",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "নরওয়ে",
+    "nameEn": "Norway",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "অসলো, বার্গেন ফিয়র্ড ও ট্রমসোর নর্দার্ন লাইটস ভ্রমণ",
+    "taglineEn": "Oslo, Bergen fjords, scenic railways & Tromsø Northern Lights",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "austria",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "অস্ট্রিয়া",
+    "nameEn": "Austria",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ভিয়েনা, সালজবুর্গ ও হলস্টাটের রূপকথার আল্পাইন গ্রাম",
+    "taglineEn": "Vienna imperial palaces, Salzburg & fairytale Hallstatt Alps",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "belgium",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "বেলজিয়াম",
+    "nameEn": "Belgium",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ব্রাসেলস, ব্রুজের মধ্যযুগীয় ক্যানাল, ইইউ ব্যবসা ও উচ্চশিক্ষা",
+    "taglineEn": "Brussels EU hub, medieval Bruges canals & European universities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "ireland",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "আয়ারল্যান্ড",
+    "nameEn": "Ireland",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ডাবলিন, ক্লিফস অব মোহের ও ইংরেজিভাষী ইউরোপীয় উচ্চশিক্ষা",
+    "taglineEn": "Dublin tech hub, Cliffs of Moher & English-speaking EU degrees",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট ও পূর্ববর্তী ট্রাভেল হিস্ট্রির সকল কপি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, আয়ের উৎস ও সঞ্চয়ের প্রমাণপত্র",
+      "চাকরির NOC, পে-স্লিপ বা ব্যবসায়ীর Trade License ও আয়কর রিটার্ন",
+      "স্টুডেন্ট ভিসার ক্ষেত্রে CAS/Offer Letter, IELTS ও টিউশন ফান্ড ডকুমেন্ট"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport and complete copies of previous travel history",
+      "6-month Bank Statement, verified income source & savings evidence",
+      "Job NOC & payslips, or Trade License and Tax Return for business owners",
+      "For Study: CAS/Offer Letter, English test score & tuition fund proof"
+    ]
+  },
+  {
+    "slug": "czech-republic",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "চেক প্রজাতন্ত্র",
+    "nameEn": "Czech Republic",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "প্রাগ শহরের ঐতিহাসিক দুর্গ, চার্লস ব্রিজ ও উচ্চশিক্ষা",
+    "taglineEn": "Prague Old Town, Charles Bridge, castles & Central EU study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "croatia",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "ক্রোয়েশিয়া",
+    "nameEn": "Croatia",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ডুব্রোভনিক, জাগ্রেব, অ্যাড্রিয়াটিক উপকূল ও শেনজেন-কর্মসংস্থান",
+    "taglineEn": "Dubrovnik coast, Zagreb, Plitvice Lakes & EU work/travel",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "malta",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "মাল্টা",
+    "nameEn": "Malta",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ভ্যালেটা, ভূমধ্যসাগরীয় দ্বীপ, ইংরেজি উচ্চশিক্ষা ও Work Permit",
+    "taglineEn": "Valletta Mediterranean island, English study & EU work pathways",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "cyprus",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "সাইপ্রাস",
+    "nameEn": "Cyprus",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "নিকোসিয়া, লিমাসল, ভূমধ্যসাগরীয় সৈকত ও সাশ্রয়ী উচ্চশিক্ষা",
+    "taglineEn": "Nicosia, Limassol beaches & accessible European higher education",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "usa",
+    "imageKey": "hero",
+    "featuredOnHome": false,
+    "nameBn": "যুক্তরাষ্ট্র (USA)",
+    "nameEn": "United States (USA)",
+    "regionBn": "উত্তর আমেরিকা",
+    "regionEn": "North America",
+    "taglineBn": "নিউইয়র্ক, ক্যালিফোর্নিয়া — B1/B2 ভিজিট ও F1 স্টুডেন্ট ভিসা গাইড",
+    "taglineEn": "New York, California — B1/B2 Visitor & F1 Student Visa preparation",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ডিজিটাল ছবি ও সঠিকভাবে পূরণকৃত অনলাইন আবেদন ফর্ম",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, আয়কর রিটার্ন ও দেশে দৃঢ় সম্পৃক্ততার প্রমাণ",
+      "চাকরির NOC / ব্যবসায়িক কাগজপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "Embassy Appointment / VFS বায়োমেট্রিক কনফার্মেশন ও সাপোর্টিং ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, digital photo, and accurately completed online application",
+      "6-month Bank Statement, Tax Returns & strong home-country ties",
+      "Employment NOC / business records or University Offer Letter",
+      "Embassy Appointment / VFS Biometric confirmation and supporting dossier"
+    ]
+  },
+  {
+    "slug": "canada",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "কানাডা",
+    "nameEn": "Canada",
+    "regionBn": "উত্তর আমেরিকা",
+    "regionEn": "North America",
+    "taglineBn": "টরন্টো, ভ্যাঙ্কুভার, নায়াগ্রা ফলস — ভিজিট ও স্টাডি পারমিট গাইড",
+    "taglineEn": "Toronto, Vancouver, Niagara Falls — Visitor & Study Permit support",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ডিজিটাল ছবি ও সঠিকভাবে পূরণকৃত অনলাইন আবেদন ফর্ম",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, আয়কর রিটার্ন ও দেশে দৃঢ় সম্পৃক্ততার প্রমাণ",
+      "চাকরির NOC / ব্যবসায়িক কাগজপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "Embassy Appointment / VFS বায়োমেট্রিক কনফার্মেশন ও সাপোর্টিং ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, digital photo, and accurately completed online application",
+      "6-month Bank Statement, Tax Returns & strong home-country ties",
+      "Employment NOC / business records or University Offer Letter",
+      "Embassy Appointment / VFS Biometric confirmation and supporting dossier"
+    ]
+  },
+  {
+    "slug": "mexico",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "মেক্সিকো",
+    "nameEn": "Mexico",
+    "regionBn": "উত্তর আমেরিকা",
+    "regionEn": "North America",
+    "taglineBn": "মেক্সিকো সিটি, কানকুন ক্যারিবিয়ান বিচ ও মায়া সভ্যতা",
+    "taglineEn": "Mexico City, Cancun Caribbean resorts & ancient Mayan heritage",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ডিজিটাল ছবি ও সঠিকভাবে পূরণকৃত অনলাইন আবেদন ফর্ম",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, আয়কর রিটার্ন ও দেশে দৃঢ় সম্পৃক্ততার প্রমাণ",
+      "চাকরির NOC / ব্যবসায়িক কাগজপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "Embassy Appointment / VFS বায়োমেট্রিক কনফার্মেশন ও সাপোর্টিং ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, digital photo, and accurately completed online application",
+      "6-month Bank Statement, Tax Returns & strong home-country ties",
+      "Employment NOC / business records or University Offer Letter",
+      "Embassy Appointment / VFS Biometric confirmation and supporting dossier"
+    ]
+  },
+  {
+    "slug": "australia",
+    "imageKey": "singapore",
+    "featuredOnHome": false,
+    "nameBn": "অস্ট্রেলিয়া",
+    "nameEn": "Australia",
+    "regionBn": "ওশেনিয়া",
+    "regionEn": "Oceania",
+    "taglineBn": "সিডনি, মেলবোর্ন, ব্রিসবেন — উচ্চশিক্ষা, ফ্যামিলি ভিজিট ও ভ্রমণ",
+    "taglineEn": "Sydney, Melbourne, Brisbane — top universities & family holidays",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, NID ও পারিবারিক তথ্যের সঠিক প্রমাণপত্র",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, আয়কর রিটার্ন ও স্থাবর-অস্থাবর সম্পদের বিবরণ",
+      "চাকরির NOC / Trade License অথবা স্টুডেন্টদের জন্য CoE ও IELTS স্কোর",
+      "অনলাইন আবেদন ফর্ম, ভ্রমণ পরিকল্পনা ও বায়োমেট্রিক Appointment"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, NID, and verified family composition records",
+      "6-month Bank Statement, Tax Returns & asset/tie documentation",
+      "Employment NOC / Trade License, or CoE & English test for students",
+      "Online visa application, travel plan, and biometric Appointment"
+    ]
+  },
+  {
+    "slug": "new-zealand",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "নিউজিল্যান্ড",
+    "nameEn": "New Zealand",
+    "regionBn": "ওশেনিয়া",
+    "regionEn": "Oceania",
+    "taglineBn": "অকল্যান্ড, কুইন্সটাউন, মিলফোর্ড সাউন্ড ও নিরাপদ উচ্চশিক্ষা",
+    "taglineEn": "Auckland, Queenstown fjords, Milford Sound & peaceful study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, NID ও পারিবারিক তথ্যের সঠিক প্রমাণপত্র",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, আয়কর রিটার্ন ও স্থাবর-অস্থাবর সম্পদের বিবরণ",
+      "চাকরির NOC / Trade License অথবা স্টুডেন্টদের জন্য CoE ও IELTS স্কোর",
+      "অনলাইন আবেদন ফর্ম, ভ্রমণ পরিকল্পনা ও বায়োমেট্রিক Appointment"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, NID, and verified family composition records",
+      "6-month Bank Statement, Tax Returns & asset/tie documentation",
+      "Employment NOC / Trade License, or CoE & English test for students",
+      "Online visa application, travel plan, and biometric Appointment"
+    ]
+  },
+  {
+    "slug": "morocco",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "মরক্কো",
+    "nameEn": "Morocco",
+    "regionBn": "আফ্রিকা",
+    "regionEn": "Africa",
+    "taglineBn": "মারাকেশ, কাসাব্লাঙ্কা, নীল শহর শেফশাওয়েন ও সাহারা মরুভূমি",
+    "taglineEn": "Marrakech, Casablanca, Blue City Chefchaouen & Sahara dunes",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাম্প্রতিক রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, সলভেন্সি ও পেশার প্রমাণপত্র (NOC / Trade License)",
+      "কনফার্ম রিটার্ন ফ্লাইট, হোটেল বুকিং ও ট্রাভেল ইনস্যুরেন্স",
+      "প্রযোজ্য ক্ষেত্রে ইয়েলো ফিভার টিকা সনদ বা অনলাইন e-Visa অনুমোদন"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and recent color photographs",
+      "6-month Bank Statement, Solvency & occupation proof (NOC / Trade License)",
+      "Confirmed return flight, hotel reservation & Travel Insurance",
+      "Yellow Fever vaccination certificate or e-Visa approval where required"
+    ]
+  },
+  {
+    "slug": "south-africa",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "দক্ষিণ আফ্রিকা",
+    "nameEn": "South Africa",
+    "regionBn": "আফ্রিকা",
+    "regionEn": "Africa",
+    "taglineBn": "কেপটাউন, টেবিল মাউন্টেন, ক্রুগার সাফারি ও বাণিজ্যিক সফর",
+    "taglineEn": "Cape Town, Table Mountain, Kruger Safari & business travel",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাম্প্রতিক রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, সলভেন্সি ও পেশার প্রমাণপত্র (NOC / Trade License)",
+      "কনফার্ম রিটার্ন ফ্লাইট, হোটেল বুকিং ও ট্রাভেল ইনস্যুরেন্স",
+      "প্রযোজ্য ক্ষেত্রে ইয়েলো ফিভার টিকা সনদ বা অনলাইন e-Visa অনুমোদন"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and recent color photographs",
+      "6-month Bank Statement, Solvency & occupation proof (NOC / Trade License)",
+      "Confirmed return flight, hotel reservation & Travel Insurance",
+      "Yellow Fever vaccination certificate or e-Visa approval where required"
+    ]
+  },
+  {
+    "slug": "kenya",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "কেনিয়া",
+    "nameEn": "Kenya",
+    "regionBn": "আফ্রিকা",
+    "regionEn": "Africa",
+    "taglineBn": "মাসাই মারা সাফারি, নাইরোবি ও সহজ অনলাইন eTA প্রক্রিয়া",
+    "taglineEn": "Masai Mara wildlife safaris, Nairobi & convenient online eTA",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাম্প্রতিক রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, সলভেন্সি ও পেশার প্রমাণপত্র (NOC / Trade License)",
+      "কনফার্ম রিটার্ন ফ্লাইট, হোটেল বুকিং ও ট্রাভেল ইনস্যুরেন্স",
+      "প্রযোজ্য ক্ষেত্রে ইয়েলো ফিভার টিকা সনদ বা অনলাইন e-Visa অনুমোদন"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and recent color photographs",
+      "6-month Bank Statement, Solvency & occupation proof (NOC / Trade License)",
+      "Confirmed return flight, hotel reservation & Travel Insurance",
+      "Yellow Fever vaccination certificate or e-Visa approval where required"
+    ]
+  },
+  {
+    "slug": "mauritius",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "মরিশাস",
+    "nameEn": "Mauritius",
+    "regionBn": "আফ্রিকা",
+    "regionEn": "Africa",
+    "taglineBn": "হানিমুন দ্বীপ, পোর্ট লুইস, কোরাল রিফ ও বৈধ কর্মসংস্থান",
+    "taglineEn": "Indian Ocean honeymoon lagoons, Port Louis & work opportunities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাম্প্রতিক রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, সলভেন্সি ও পেশার প্রমাণপত্র (NOC / Trade License)",
+      "কনফার্ম রিটার্ন ফ্লাইট, হোটেল বুকিং ও ট্রাভেল ইনস্যুরেন্স",
+      "প্রযোজ্য ক্ষেত্রে ইয়েলো ফিভার টিকা সনদ বা অনলাইন e-Visa অনুমোদন"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and recent color photographs",
+      "6-month Bank Statement, Solvency & occupation proof (NOC / Trade License)",
+      "Confirmed return flight, hotel reservation & Travel Insurance",
+      "Yellow Fever vaccination certificate or e-Visa approval where required"
+    ]
+  },
+  {
+    "slug": "brazil",
+    "imageKey": "thailand",
+    "featuredOnHome": false,
+    "nameBn": "ব্রাজিল",
+    "nameEn": "Brazil",
+    "regionBn": "দক্ষিণ আমেরিকা",
+    "regionEn": "South America",
+    "taglineBn": "রিও ডি জেনিরো, সাও পাওলো, ইগুয়াজু জলপ্রপাত ও বাণিজ্যিক সফর",
+    "taglineEn": "Rio de Janeiro, São Paulo commerce, Iguazu Falls & Amazon",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাম্প্রতিক রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, সলভেন্সি ও পেশার প্রমাণপত্র (NOC / Trade License)",
+      "কনফার্ম রিটার্ন ফ্লাইট, হোটেল বুকিং ও ট্রাভেল ইনস্যুরেন্স",
+      "প্রযোজ্য ক্ষেত্রে ইয়েলো ফিভার টিকা সনদ বা অনলাইন e-Visa অনুমোদন"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and recent color photographs",
+      "6-month Bank Statement, Solvency & occupation proof (NOC / Trade License)",
+      "Confirmed return flight, hotel reservation & Travel Insurance",
+      "Yellow Fever vaccination certificate or e-Visa approval where required"
+    ]
+  },
+  {
+    "slug": "lebanon",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "লেবানন",
+    "nameEn": "Lebanon",
+    "regionBn": "মধ্যপ্রাচ্য",
+    "regionEn": "Middle East",
+    "taglineBn": "বৈরুত, বাইব্লোস ও ভূমধ্যসাগরীয় ঐতিহাসিক সফর",
+    "taglineEn": "Beirut Mediterranean coast, Byblos heritage & regional travel",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও সাদা ব্যাকগ্রাউন্ডের রঙিন ছবি",
+      "ভিজিট ভিসার জন্য ৬ মাসের ব্যাংক স্টেটমেন্ট, পেশার প্রমাণপত্র ও রিটার্ন বুকিং",
+      "Work Permit-এর ক্ষেত্রে পুলিশ ক্লিয়ারেন্স ও অনুমোদিত মেডিকেল (GAMCA/Wafid)",
+      "হোটেল বুকিং অথবা অনুমোদিত স্পন্সরের আমন্ত্রণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and white-background color photos",
+      "For Visit Visa: 6-month Bank Statement, occupation proof & return itinerary",
+      "For Work Permit: Police Clearance & authorized medical report (GAMCA/Wafid)",
+      "Confirmed hotel booking or approved sponsor invitation details"
+    ]
+  },
+  {
+    "slug": "mongolia",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "মঙ্গোলিয়া",
+    "nameEn": "Mongolia",
+    "regionBn": "পূর্ব এশিয়া",
+    "regionEn": "East Asia",
+    "taglineBn": "উলানবাটর, গোবি মরুভূমি ও বিস্তীর্ণ সবুজ স্তেপ প্রকৃতি",
+    "taglineEn": "Ulaanbaatar, Gobi Desert & vast nomadic steppe landscapes",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও নির্ধারিত মাপের রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট, ব্যাংক সলভেন্সি ও আয়কর সনদ (TIN)",
+      "পেশার প্রমাণপত্র (NOC / Trade License / Student ID) ও ভ্রমণ সূচি",
+      "কনফার্ম ফ্লাইট-হোটেল রিজার্ভেশন (প্রযোজ্য ক্ষেত্রে ইনভিটেশন লেটার)"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months) and embassy-spec color photographs",
+      "6-month Bank Statement, Solvency Certificate & Tax documents (TIN)",
+      "Occupation proof (NOC / Trade License / Student ID) & travel itinerary",
+      "Confirmed flight/hotel bookings (plus invitation letter if applicable)"
+    ]
+  },
+  {
+    "slug": "kyrgyzstan",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "কিরগিজস্তান",
+    "nameEn": "Kyrgyzstan",
+    "regionBn": "ইউরোপ ও এশিয়া",
+    "regionEn": "Eurasia",
+    "taglineBn": "বিশকেক, ইসিক-কুল লেক, তিয়ান শান পাহাড় ও মেডিকেল শিক্ষা",
+    "taglineEn": "Bishkek, Issyk-Kul alpine lake, Tian Shan peaks & MBBS study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "armenia",
+    "imageKey": "turkey",
+    "featuredOnHome": false,
+    "nameBn": "আর্মেনিয়া",
+    "nameEn": "Armenia",
+    "regionBn": "ইউরোপ ও এশিয়া",
+    "regionEn": "Eurasia",
+    "taglineBn": "ইয়েরেভান, সেভান লেক ও ককেশাস পর্বতমালার ঐতিহ্য",
+    "taglineEn": "Yerevan pink-stone city, Lake Sevan & Caucasus vistas",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ বৈধ পাসপোর্ট ও ডিজিটাল রঙিন ছবি",
+      "৬ মাসের ব্যাংক স্টেটমেন্ট ও ব্যাংক সলভেন্সি সার্টিফিকেট",
+      "চাকরিজীবীর NOC বা ব্যবসায়ীর ইংরেজি অনুবাদকৃত Trade License",
+      "রিটার্ন ফ্লাইট Itinerary ও কনফার্ম হোটেল বুকিং"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months validity) and digital color photograph",
+      "6-month Bank Statement and Bank Solvency Certificate",
+      "Employment NOC or notarized English Trade License",
+      "Return flight itinerary and confirmed hotel reservation"
+    ]
+  },
+  {
+    "slug": "bulgaria",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "বুলগেরিয়া",
+    "nameEn": "Bulgaria",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "সোফিয়া, ব্ল্যাক সি উপকূল, শেনজেন ভ্রমণ ও বৈধ Work Permit",
+    "taglineEn": "Sofia, Black Sea resorts, Schengen access & EU work pathways",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "slovakia",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "স্লোভাকিয়া",
+    "nameEn": "Slovakia",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ব্রাতিস্লাভা, হাই টাট্রাস পর্বত ও মধ্য ইউরোপীয় শেনজেন গন্তব্য",
+    "taglineEn": "Bratislava, High Tatras peaks & Central European work/study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "lithuania",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "লিথুয়ানিয়া",
+    "nameEn": "Lithuania",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "ভিলনিয়াস, বাল্টিক শেনজেন ও সাশ্রয়ী ইংরেজি উচ্চশিক্ষা",
+    "taglineEn": "Vilnius Old Town, Baltic Schengen & affordable EU universities",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "latvia",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "লাটভিয়া",
+    "nameEn": "Latvia",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "রিগা আর্ট নুভো ঐতিহ্য, বাল্টিক শেনজেন ও উচ্চশিক্ষা",
+    "taglineEn": "Riga Art Nouveau heritage, Baltic Schengen & EU university study",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "বৈধ পাসপোর্ট, ছবি ও পুলিশ ক্লিয়ারেন্স সার্টিফিকেট",
+      "বৈধ Work Permit অনুমোদনপত্র অথবা বিশ্ববিদ্যালয়ের Offer Letter",
+      "ব্যাংক স্টেটমেন্ট, আবাসন প্রমাণপত্র ও Travel Medical Insurance",
+      "শিক্ষাগত/পেশাগত সনদ ও সংশ্লিষ্ট Embassy Appointment ফাইল"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport, photographs, and Police Clearance Certificate",
+      "Verified Work Permit approval or University Offer Letter",
+      "Bank Statement, accommodation proof, and Travel Medical Insurance",
+      "Academic/experience certificates and Embassy Appointment dossier"
+    ]
+  },
+  {
+    "slug": "estonia",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "এস্তোনিয়া",
+    "nameEn": "Estonia",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "তাল্লিন ডিজিটাল ইউরোপ, আইটি উচ্চশিক্ষা ও নর্ডিক শেনজেন",
+    "taglineEn": "Tallinn medieval charm, Digital Europe IT degrees & Nordic access",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
+  },
+  {
+    "slug": "iceland",
+    "imageKey": "europe",
+    "featuredOnHome": false,
+    "nameBn": "আইসল্যান্ড",
+    "nameEn": "Iceland",
+    "regionBn": "ইউরোপ",
+    "regionEn": "Europe",
+    "taglineBn": "রেইকিয়াভিক, ব্লু লেগুন, জলপ্রপাত ও নর্দার্ন লাইটসের দেশ",
+    "taglineEn": "Reykjavik, Blue Lagoon, Golden Circle glaciers & Aurora Borealis",
+    "startingPriceBDT": null,
+    "documentsSummaryBn": [
+      "ন্যূনতম ৬ মাস মেয়াদসহ পাসপোর্ট (পুরানো পাসপোর্টসহ) ও বায়োমেট্রিক ছবি",
+      "৬ মাসের ব্যক্তিগত/বিজনেস ব্যাংক স্টেটমেন্ট, সলভেন্সি ও আয়কর রিটার্ন (TIN)",
+      "ন্যূনতম €30,000 কাভারেজসহ Schengen Travel Medical Insurance",
+      "Cover Letter, ভ্রমণ সূচি, ফ্লাইট-হোটেল রিজার্ভেশন ও পেশার প্রমাণপত্র"
+    ],
+    "documentsSummaryEn": [
+      "Valid passport (6+ months, with prior passports) and biometric photos",
+      "6-month personal/business Bank Statement, Solvency & Tax Return (TIN)",
+      "Schengen Travel Medical Insurance (€30,000 minimum coverage)",
+      "Cover Letter, day-by-day itinerary, flight/hotel bookings & occupation proof"
+    ]
   }
 ];
 

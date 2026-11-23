@@ -1,4 +1,5 @@
 import { siteImages } from '../config/images';
+import { extendedDestinationsData } from './destinationsExtended';
 
 export interface DestinationItem {
   slug: string;
@@ -33,7 +34,7 @@ export interface DestinationItem {
   faqs: { questionBn: string; answerBn: string; questionEn: string; answerEn: string }[];
 }
 
-export const destinationsData: DestinationItem[] = [
+const coreDestinationsData: DestinationItem[] = [
   {
     slug: 'dubai',
     imageKey: 'dubai',
@@ -644,6 +645,11 @@ export const destinationsData: DestinationItem[] = [
       },
     ],
   },
+];
+
+export const destinationsData: DestinationItem[] = [
+  ...coreDestinationsData,
+  ...extendedDestinationsData,
 ];
 
 export function getDestinationBySlug(slug: string): DestinationItem | undefined {

@@ -35,7 +35,13 @@ export function DestinationDetailPage() {
 
   const availableServices = servicesData.filter((s) => dest.availableServices.includes(s.slug));
   const relatedPackages = tourPackagesData.filter((p) => p.countrySlug === dest.slug);
-  const otherDestinations = destinationsData.filter((d) => d.slug !== dest.slug).slice(0, 4);
+  const sameRegionOthers = destinationsData.filter(
+    (d) => d.slug !== dest.slug && d.regionEn === dest.regionEn
+  );
+  const fallbackOthers = destinationsData.filter(
+    (d) => d.slug !== dest.slug && d.regionEn !== dest.regionEn
+  );
+  const otherDestinations = [...sameRegionOthers, ...fallbackOthers].slice(0, 4);
   const startingPrice = formatBDT(dest.startingPriceBDT, locale);
 
   const faqEntries = dest.faqs.map((f) => ({
@@ -65,7 +71,13 @@ export function DestinationDetailPage() {
 
       <section className="relative bg-navy-hero text-white overflow-hidden">
         <div className="absolute inset-0">
-          <SafeImage imageKey={dest.imageKey} preset="detailHero" priority className="w-full h-full object-cover opacity-35" />
+          <SafeImage
+            imageKey={dest.imageKey}
+            destinationSlug={dest.slug}
+            preset="detailHero"
+            priority
+            className="w-full h-full object-cover opacity-35"
+          />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#071529]/95 via-[#0B1F3A]/85 to-[#0B1F3A]/50" />
         </div>
 
