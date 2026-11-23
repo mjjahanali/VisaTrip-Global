@@ -188,7 +188,12 @@ if (fs.existsSync(distIndexPath)) {
   let html = fs.readFileSync(distIndexPath, 'utf8');
   if (basePath !== '/') {
     html = html
-      .replaceAll('href="/favicon.svg"', `href="${basePath}favicon.svg"`)
+      .replaceAll('href="/favicon.ico', `href="${basePath}favicon.ico`)
+      .replaceAll('href="/favicon.svg', `href="${basePath}favicon.svg`)
+      .replaceAll('href="/favicon-48x48.png', `href="${basePath}favicon-48x48.png`)
+      .replaceAll('href="/favicon-32x32.png', `href="${basePath}favicon-32x32.png`)
+      .replaceAll('href="/favicon-16x16.png', `href="${basePath}favicon-16x16.png`)
+      .replaceAll('href="/apple-touch-icon.png', `href="${basePath}apple-touch-icon.png`)
       .replaceAll('href="/manifest.webmanifest"', `href="${basePath}manifest.webmanifest"`);
   }
   if (siteUrl !== 'https://www.visatripglobal.com') {
@@ -209,7 +214,13 @@ const requiredArtifacts = [
   '.nojekyll',
   'sitemap.xml',
   'robots.txt',
+  'favicon.ico',
   'favicon.svg',
+  'favicon-32x32.png',
+  'favicon-48x48.png',
+  'apple-touch-icon.png',
+  'icon-192.png',
+  'icon-512.png',
   'manifest.webmanifest',
   'src/assets/optimized/hero/1376w.avif',
 ];

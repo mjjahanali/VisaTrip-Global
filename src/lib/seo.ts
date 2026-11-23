@@ -154,7 +154,7 @@ export function buildOrganizationSchema(): Record<string, unknown> {
     '@id': `${siteConfig.domain}/#organization`,
     name: siteConfig.brandName,
     url: siteConfig.domain,
-    logo: `${siteConfig.domain}/favicon.svg`,
+    logo: `${siteConfig.domain}/icon-512.png`,
     image: `${siteConfig.domain}/src/assets/optimized/hero/1280w.jpg`,
     slogan: siteConfig.taglineBn,
     telephone: siteConfig.contact.phoneDisplay,
@@ -394,7 +394,7 @@ export function buildBlogPostingSchema(params: {
       name: siteConfig.brandName,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteConfig.domain}/favicon.svg`,
+        url: `${siteConfig.domain}/icon-512.png`,
       },
     },
   };
