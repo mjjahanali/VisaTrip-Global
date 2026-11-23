@@ -1,5 +1,6 @@
 import type { SiteImageKey } from '../config/images';
 import { siteImages } from '../config/images';
+import { withBasePath } from '../lib/assetUrl';
 
 interface HeroVideoLayerProps {
   posterImageKey: SiteImageKey;
@@ -28,12 +29,12 @@ export function HeroVideoLayer({
       loop
       playsInline
       preload="metadata"
-      poster={posterImage.src}
+      poster={withBasePath(posterImage.src)}
       onError={onError}
       className="relative z-10 w-full h-full object-cover"
     >
-      {webmSrc && <source src={webmSrc} type="video/webm" />}
-      {mp4Src && <source src={mp4Src} type="video/mp4" />}
+      {webmSrc && <source src={withBasePath(webmSrc)} type="video/webm" />}
+      {mp4Src && <source src={withBasePath(mp4Src)} type="video/mp4" />}
     </video>
   );
 }

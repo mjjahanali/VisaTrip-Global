@@ -8,6 +8,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { PageRouteSkeleton } from './components/Skeletons';
 import { HomePage } from './pages/HomePage';
 import { routeLoaders } from './lib/prefetchRoutes';
+import { getRouterBasename } from './lib/assetUrl';
 
 // Route-level code splitting (shared with selective key-route prefetcher)
 const AboutPage = lazy(() => routeLoaders.about().then((m) => ({ default: m.AboutPage })));
@@ -117,7 +118,7 @@ export default function App() {
     <ErrorBoundary>
       <LazyMotion features={domAnimation} strict>
         <MotionConfig reducedMotion="user">
-          <BrowserRouter>
+          <BrowserRouter basename={getRouterBasename()}>
             <LanguageProvider>
               <ToastProvider>
                 <RoutedAppShell />

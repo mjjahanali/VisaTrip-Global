@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Search, CheckCircle2, Clock, MessageCircle, AlertCircle, Loader2 } from 'lucide-react';
-import type { ApplicationTrackRecord } from '../data/siteContent';
+import { sampleTrackingRecords, type ApplicationTrackRecord } from '../data/siteContent';
 import { buildWhatsAppLink } from '../config/site';
+import { getApiUrl, isStaticSiteMode } from '../lib/assetUrl';
 import { SeoHead, buildBreadcrumbSchema, trackAnalyticsEvent } from '../lib/seo';
 import { useLanguage } from '../context/LanguageContext';
 import { useToast } from '../context/ToastContext';
@@ -41,11 +42,47 @@ export function TrackApplicationPage() {
       return;
     }
 
+    const lookupLocally = () => {
+      const cleanId = appId.trim().toUpperCase();
+      const digits = phone.replace(/\D/g, '');
+      const last4 = digits.slice(-4);
+      const found = sampleTrackingRecords.find(
+        (rec) => rec.applicationId.toUpperCase() === cleanId && rec.phoneLast4 === last4
+      );
+      if (!found) {
+        setError(
+          t(
+            'এই Application ID ও মোবাইল নম্বরের সাথে কোনো রেকর্ড মেলেনি। সঠিক তথ্য অথবা WhatsApp-এ যোগাযোগ করুন।',
+            'No matching record found for this Application ID and mobile number. Please check or contact us on WhatsApp.'
+          )
+        );
+      } else {
+        setRecord(found);
+        showToast({
+          variant: 'success',
+          durationMs: 3600,
+          title: t('আবেদনের তথ্য পাওয়া গেছে', 'Application Status Loaded'),
+          description: `${found.applicationId} — ${isEn ? found.serviceEn : found.serviceBn}`,
+        });
+      }
+    };
+
     setLoading(true);
     try {
+      if (isStaticSiteMode()) {
+        lookupLocally();
+        return;
+      }
       const resp = await fetch(
-        `/api/track?applicationId=${encodeURIComponent(appId.trim())}&phone=${encodeURIComponent(phone.trim())}`
+        getApiUrl(
+          `/api/track?applicationId=${encodeURIComponent(appId.trim())}&phone=${encodeURIComponent(phone.trim())}`
+        )
       );
+      const contentType = resp.headers.get('content-type') || '';
+      if (!contentType.includes('application/json')) {
+        lookupLocally();
+        return;
+      }
       const data = await resp.json();
       if (!resp.ok || !data.ok) {
         setError(data.error || t('কোনো রেকর্ড পাওয়া যায়নি।', 'No matching application found.'));
@@ -59,13 +96,7 @@ export function TrackApplicationPage() {
         });
       }
     } catch {
-      const msg = t('নেটওয়ার্ক সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।', 'Network error. Please try again.');
-      setError(msg);
-      showToast({
-        variant: 'error',
-        title: t('সংযোগ ব্যর্থ হয়েছে', 'Connection Error'),
-        description: msg,
-      });
+      lookupLocally();
     } finally {
       setLoading(false);
     }

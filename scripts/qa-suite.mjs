@@ -484,10 +484,13 @@ async function main() {
     const envExample = fs.readFileSync(path.join(ROOT, '.env.example'), 'utf8');
     const allCodeFiles = [...srcFiles, path.join(ROOT, 'server.ts'), path.join(ROOT, 'vite.config.ts')];
     const usedEnvKeys = new Set();
+    const viteBuiltIns = new Set(['BASE_URL', 'MODE', 'DEV', 'PROD', 'SSR']);
     for (const file of allCodeFiles) {
       const content = fs.readFileSync(file, 'utf8');
       for (const match of content.matchAll(/(?:process\.env|import\.meta\.env\??)\.([A-Z][A-Z0-9_]+)/g)) {
-        usedEnvKeys.add(match[1]);
+        if (!viteBuiltIns.has(match[1])) {
+          usedEnvKeys.add(match[1]);
+        }
       }
     }
     const undocumentedEnvs = [...usedEnvKeys].filter((k) => !new RegExp(`^#?\\s*${k}=`, 'm').test(envExample));

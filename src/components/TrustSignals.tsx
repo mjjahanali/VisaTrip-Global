@@ -25,6 +25,7 @@ import {
   toBanglaDigits,
 } from '../config/site';
 import { useLanguage } from '../context/LanguageContext';
+import { withBasePath } from '../lib/assetUrl';
 import { GoogleMapFacade } from './GoogleMapFacade';
 
 /**
@@ -630,7 +631,7 @@ export function TeamAndOfficeSlots() {
                 {member.photoSrc ? (
                   <div className="aspect-[4/3] bg-[#0B1F3A] overflow-hidden">
                     <img
-                      src={member.photoSrc}
+                      src={withBasePath(member.photoSrc)}
                       alt={isEn ? `${member.nameEn} — ${member.roleEn}` : `${member.nameBn} — ${member.roleBn}`}
                       loading="lazy"
                       className="w-full h-full object-cover object-top"
@@ -704,7 +705,7 @@ export function TeamAndOfficeSlots() {
               <figure key={photo.id} className="card-surface overflow-hidden">
                 <div className="aspect-[4/3] bg-[#0B1F3A] overflow-hidden">
                   <img
-                    src={photo.src}
+                    src={withBasePath(photo.src)}
                     alt={isEn ? photo.slotLabelEn : photo.slotLabelBn}
                     width={800}
                     height={600}

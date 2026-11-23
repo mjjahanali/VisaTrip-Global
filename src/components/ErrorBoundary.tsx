@@ -1,6 +1,7 @@
 import React from 'react';
 import { AlertTriangle, Home, MessageCircle, RefreshCw, RotateCcw } from 'lucide-react';
 import { siteConfig, buildWhatsAppLink } from '../config/site';
+import { stripBasePath, withBasePath } from '../lib/assetUrl';
 
 interface ErrorBoundaryProps {
   children: React.ReactNode;
@@ -52,10 +53,10 @@ export class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoun
       return this.props.children;
     }
 
-    const isEn =
-      typeof window !== 'undefined' &&
-      (window.location.pathname === '/en' || window.location.pathname.startsWith('/en/'));
-    const homeHref = isEn ? '/en' : '/';
+    const cleanPath =
+      typeof window !== 'undefined' ? stripBasePath(window.location.pathname) : '/';
+    const isEn = cleanPath === '/en' || cleanPath.startsWith('/en/');
+    const homeHref = withBasePath(isEn ? '/en' : '/');
     const waHref = buildWhatsAppLink(
       'আসসালামু আলাইকুম, ওয়েবসাইটের একটি পেজ লোড হতে সমস্যা হচ্ছে। আমি সরাসরি তথ্য জানতে চাই।',
       isEn ? 'en' : 'bn'

@@ -6,6 +6,7 @@ import { useToast } from '../context/ToastContext';
 import { OfficeReviewQrCard } from '../components/OfficeReviewQrCard';
 import { ListSkeleton } from '../components/Skeletons';
 import { EmptyState } from '../components/EmptyState';
+import { getApiUrl, isStaticSiteMode } from '../lib/assetUrl';
 
 const STATUSES: LeadStatus[] = ['New', 'Contacted', 'Processing', 'Done'];
 
@@ -23,7 +24,7 @@ export function AdminLeadsPage() {
     setLoading(true);
     setError('');
     try {
-      const resp = await fetch('/api/leads', {
+      const resp = await fetch(getApiUrl('/api/leads'), {
         headers: { 'X-Admin-Password': pwd },
       });
       const data = await resp.json();
@@ -48,7 +49,7 @@ export function AdminLeadsPage() {
 
   const handleStatusChange = async (id: string, nextStatus: LeadStatus) => {
     if (!authedPassword) return;
-    const resp = await fetch(`/api/leads/${encodeURIComponent(id)}`, {
+    const resp = await fetch(getApiUrl(`/api/leads/${encodeURIComponent(id)}`), {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -112,16 +113,34 @@ export function AdminLeadsPage() {
       <section className="py-12 sm:py-16 min-h-[70vh]">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           {!authedPassword ? (
-            <div className="max-w-md mx-auto bg-white rounded-2xl p-7 border border-[#0B1F3A]/10 shadow-sm">
-              <div className="w-11 h-11 rounded-xl bg-[#0B1F3A] text-[#C9A24B] flex items-center justify-center mb-4">
-                <Lock className="w-5 h-5" />
-              </div>
-              <h1 className="text-xl font-bold text-[#0B1F3A]">Admin Leads Panel</h1>
-              <p className="mt-1 text-xs text-[#525B68]">
-                অ্যাডমিন পাসওয়ার্ড দিয়ে ক্লায়েন্ট ইনকোয়ারি লগ দেখুন। (ডিফল্ট ডেভ পাসওয়ার্ড: .env-এ সেট করুন)
-              </p>
+            <div className={isStaticSiteMode() ? 'space-y-8' : ''}>
+              <div
+                className={`${
+                  isStaticSiteMode() ? 'max-w-2xl p-6 sm:p-8 border-[#C9A24B]/35' : 'max-w-md p-7 border-[#0B1F3A]/10'
+                } mx-auto bg-white rounded-2xl border shadow-sm`}
+              >
+                <div className="w-11 h-11 rounded-xl bg-[#0B1F3A] text-[#C9A24B] flex items-center justify-center mb-4">
+                  <Lock className="w-5 h-5" aria-hidden="true" />
+                </div>
+                <h1 className="text-xl font-bold text-[#0B1F3A]">
+                  {isStaticSiteMode() ? 'Static Hosting Mode (GitHub Pages)' : 'Admin Leads Panel'}
+                </h1>
+                {isStaticSiteMode() ? (
+                  <p className="mt-2 text-sm text-[#4B5563] leading-[1.7]">
+                    GitHub Pages-এ শুধুমাত্র স্ট্যাটিক ওয়েবসাইট হোস্ট হয়, তাই সার্ভার-ভিত্তিক Lead Log দেখতে
+                    বাইরের API URL (
+                    <code className="text-xs font-mono bg-[#FAF8F4] px-1.5 py-0.5 rounded">
+                      VITE_API_BASE_URL
+                    </code>
+                    ) যুক্ত করতে হবে। এর পাশাপাশি ক্লায়েন্ট ইনকোয়ারি সরাসরি WhatsApp-এ (অথবা কনফিগার করা Form Endpoint-এ) পৌঁছে যায়।
+                  </p>
+                ) : (
+                  <>
+                    <p className="mt-1 text-xs text-[#525B68]">
+                      অ্যাডমিন পাসওয়ার্ড দিয়ে ক্লায়েন্ট ইনকোয়ারি লগ দেখুন। (ডিফল্ট ডেভ পাসওয়ার্ড: .env-এ সেট করুন)
+                    </p>
 
-              <form onSubmit={handleLogin} aria-busy={loading} className="mt-5 space-y-4">
+                    <form onSubmit={handleLogin} aria-busy={loading} className="mt-5 space-y-4">
                 <fieldset disabled={loading} className="space-y-4 disabled:opacity-75 transition-opacity">
                   <div>
                     <label htmlFor="admin-pwd" className="block text-xs font-semibold text-[#0B1F3A] mb-1">
@@ -155,6 +174,10 @@ export function AdminLeadsPage() {
                   {loading ? 'Checking...' : 'Sign In'}
                 </button>
               </form>
+                  </>
+                )}
+              </div>
+              {isStaticSiteMode() && <OfficeReviewQrCard />}
             </div>
           ) : (
             <div className="space-y-6">

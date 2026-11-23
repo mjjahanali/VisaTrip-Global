@@ -1,5 +1,6 @@
 import { getPageLeadContext } from './leadContext';
 import { hasAnalyticsConsent } from './consent';
+import { stripBasePath } from './assetUrl';
 
 export type AnalyticsEventName =
   | 'cta_click'
@@ -33,8 +34,8 @@ export function trackAnalyticsEvent(
   if (typeof window === 'undefined' || !hasAnalyticsConsent()) return;
 
   try {
-    const pathname = window.location.pathname || '/';
-    const locale: 'bn' | 'en' = pathname.startsWith('/en') ? 'en' : 'bn';
+    const pathname = stripBasePath(window.location.pathname || '/');
+    const locale: 'bn' | 'en' = pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'bn';
     const ctx = getPageLeadContext(pathname, locale);
 
     const enriched: Record<string, string | number | boolean> = {

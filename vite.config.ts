@@ -6,8 +6,17 @@ import { defineConfig } from 'vite';
 
 const rootDir = import.meta.dirname;
 
+function normalizeBasePath(raw?: string): string {
+  if (!raw || raw === '/') return '/';
+  const trimmed = raw.trim().replace(/^\/+|\/+$/g, '');
+  return trimmed ? `/${trimmed}/` : '/';
+}
+
 export default defineConfig(() => {
+  const base = normalizeBasePath(process.env.VITE_BASE_PATH);
+
   return {
+    base,
     plugins: [
       react(),
       tailwindcss(),
@@ -19,8 +28,8 @@ export default defineConfig(() => {
           order: 'post',
           handler(html) {
             const preloadTags = [
-              '<link rel="preload" as="image" type="image/avif" imagesrcset="/src/assets/optimized/hero/mobile-480w.avif 480w, /src/assets/optimized/hero/mobile-720w.avif 720w" imagesizes="100vw" media="(max-width: 767px)" fetchpriority="high" />',
-              '<link rel="preload" as="image" type="image/avif" imagesrcset="/src/assets/optimized/hero/480w.avif 480w, /src/assets/optimized/hero/960w.avif 960w, /src/assets/optimized/hero/1376w.avif 1376w" imagesizes="100vw" media="(min-width: 768px)" fetchpriority="high" />',
+              `<link rel="preload" as="image" type="image/avif" imagesrcset="${base}src/assets/optimized/hero/mobile-480w.avif 480w, ${base}src/assets/optimized/hero/mobile-720w.avif 720w" imagesizes="100vw" media="(max-width: 767px)" fetchpriority="high" />`,
+              `<link rel="preload" as="image" type="image/avif" imagesrcset="${base}src/assets/optimized/hero/480w.avif 480w, ${base}src/assets/optimized/hero/960w.avif 960w, ${base}src/assets/optimized/hero/1376w.avif 1376w" imagesizes="100vw" media="(min-width: 768px)" fetchpriority="high" />`,
             ].join('\n    ');
             return html.replace('</head>', `    ${preloadTags}\n  </head>`);
           },

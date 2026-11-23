@@ -17,6 +17,7 @@ import { trackAnalyticsEvent } from '../lib/analytics';
 import { useLanguage } from '../context/LanguageContext';
 import { useToast } from '../context/ToastContext';
 import { useFocusTrap } from '../hooks/useFocusTrap';
+import { getApiUrl, getStaticFormEndpoint, isStaticSiteMode, stripBasePath } from '../lib/assetUrl';
 import { SecureFormBadge } from './TrustSignals';
 
 interface ChecklistModalProps {
@@ -121,18 +122,28 @@ export function ChecklistModal({
     setFieldErrors({});
     setLoading(true);
     try {
-      await fetch('/api/inquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name.trim(),
-          phone: phone.trim(),
-          service: serviceName,
-          message: `Downloaded PDF checklist (${trigger}): ${title}`,
-          sourcePage: window.location.pathname,
-          formType: `checklist_${trigger}`,
-        }),
-      });
+      const leadPayload = {
+        name: name.trim(),
+        phone: phone.trim(),
+        service: serviceName,
+        message: `Downloaded PDF checklist (${trigger}): ${title}`,
+        sourcePage: stripBasePath(window.location.pathname),
+        formType: `checklist_${trigger}`,
+      };
+      const staticEndpoint = getStaticFormEndpoint();
+      if (!isStaticSiteMode()) {
+        await fetch(getApiUrl('/api/inquiry'), {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(leadPayload),
+        });
+      } else if (staticEndpoint) {
+        await fetch(staticEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(leadPayload),
+        });
+      }
     } catch {
       // Download should still succeed even if network hiccups
     } finally {

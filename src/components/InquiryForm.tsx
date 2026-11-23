@@ -21,6 +21,7 @@ import { trackAnalyticsEvent } from '../lib/analytics';
 import { useLanguage } from '../context/LanguageContext';
 import { useToast } from '../context/ToastContext';
 import { useMobileKeyboard } from '../hooks/useMobileKeyboard';
+import { getApiUrl, getStaticFormEndpoint, isStaticSiteMode } from '../lib/assetUrl';
 import { SecureFormBadge } from './TrustSignals';
 
 interface InquiryValues {
@@ -160,22 +161,105 @@ export function InquiryForm({
     );
 
     try {
-      const response = await fetch('/api/inquiry', {
+      const submittedName = values.name.trim();
+      const submittedPhone = values.phone.trim();
+      const submittedMessage = values.message.trim();
+      const payload = {
+        ...values,
+        service: activeService,
+        name: submittedName,
+        phone: submittedPhone,
+        message: submittedMessage,
+        sourcePage: location.pathname,
+        formType,
+        utmSource: params.get('utm_source') || '',
+        utmMedium: params.get('utm_medium') || '',
+        utmCampaign: params.get('utm_campaign') || '',
+        extra: extraFields,
+      };
+      const directWaUrl = buildWhatsAppLink(
+        `আসসালামু আলাইকুম, আমি ${submittedName} (${submittedPhone})। সার্ভিস: ${activeService}${
+          values.country ? `, দেশ: ${values.country}` : ''
+        }। ${submittedMessage || pageCtx.whatsappMessageBn}`,
+        locale
+      );
+
+      // Static hosting mode (e.g. GitHub Pages) without a Node/Express backend
+      if (isStaticSiteMode()) {
+        // Silently absorb honeypot spam
+        if (values.website_url.trim()) {
+          setResult({
+            leadId: 'VTG-RECEIVED',
+            whatsappUrl: pageCtx.whatsappUrl,
+            applicantName: submittedName,
+            serviceName: activeService,
+          });
+          return;
+        }
+
+        const staticEndpoint = getStaticFormEndpoint();
+        let leadId = `VTG-${Date.now().toString(36).toUpperCase().slice(-6)}`;
+        if (staticEndpoint) {
+          const resp = await fetch(staticEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          if (!resp.ok) {
+            throw new Error('Static form endpoint unavailable');
+          }
+        } else {
+          leadId = 'WHATSAPP-DIRECT';
+        }
+
+        trackAnalyticsEvent('form_submit', {
+          form_type: staticEndpoint ? formType : `${formType}_whatsapp_direct`,
+          service: activeService,
+          country: values.country || undefined,
+          has_optional_details: hasOptionalDetails,
+          lead_id: leadId,
+        });
+
+        setResult({
+          leadId,
+          whatsappUrl: directWaUrl,
+          applicantName: submittedName,
+          serviceName: activeService,
+        });
+        showToast({
+          variant: 'success',
+          title: staticEndpoint
+            ? t('কনসাল্টেশন অনুরোধ সফলভাবে গৃহীত হয়েছে', 'Consultation Request Received')
+            : t('সরাসরি WhatsApp-এ পাঠানোর জন্য প্রস্তুত', 'Ready to Send on WhatsApp'),
+          description: staticEndpoint
+            ? t(
+                `রেফারেন্স আইডি: ${leadId}। তাৎক্ষণিক কথা বলতে নিচের WhatsApp বাটন ব্যবহার করুন।`,
+                `Reference ID: ${leadId}. Use WhatsApp below for immediate assistance.`
+              )
+            : t(
+                'নিচের WhatsApp বাটনে ক্লিক করে আপনার তথ্য সরাসরি আমাদের টিমকে পাঠান।',
+                'Tap the WhatsApp button below to send your details directly to our consultant.'
+              ),
+        });
+        setValues({
+          name: '',
+          phone: '',
+          service: resolvedDefaultService,
+          country: defaultCountry,
+          message: '',
+          website_url: '',
+        });
+        setShowOptional(false);
+        hasTrackedStartRef.current = false;
+        setErrors({});
+        onSuccess?.(leadId);
+        return;
+      }
+
+      const response = await fetch(getApiUrl('/api/inquiry'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...values,
-          service: activeService,
-          name: values.name.trim(),
-          phone: values.phone.trim(),
-          message: values.message.trim(),
-          sourcePage: location.pathname,
-          formType,
-          utmSource: params.get('utm_source') || '',
-          utmMedium: params.get('utm_medium') || '',
-          utmCampaign: params.get('utm_campaign') || '',
-          extra: extraFields,
-        }),
+        body: JSON.stringify(payload),
       });
       const data = await response.json();
       if (!response.ok || !data.ok) {
@@ -194,7 +278,6 @@ export function InquiryForm({
         return;
       }
 
-      const submittedName = values.name.trim();
       trackAnalyticsEvent('form_submit', {
         form_type: formType,
         service: activeService,

@@ -7,6 +7,7 @@ import {
   type SiteImageKey,
 } from '../config/images';
 import { useLanguage } from '../context/LanguageContext';
+import { withBasePath, withBaseSrcSet } from '../lib/assetUrl';
 
 export interface SafeImageProps {
   imageKey: SiteImageKey;
@@ -98,7 +99,7 @@ export function SafeImage({
           <source
             media="(max-width: 639px)"
             type="image/avif"
-            srcSet={img.mobileAvifSrcSet}
+            srcSet={withBaseSrcSet(img.mobileAvifSrcSet)}
             sizes={resolvedSizes}
           />
         )}
@@ -106,7 +107,7 @@ export function SafeImage({
           <source
             media="(max-width: 639px)"
             type="image/webp"
-            srcSet={img.mobileWebpSrcSet}
+            srcSet={withBaseSrcSet(img.mobileWebpSrcSet)}
             sizes={resolvedSizes}
           />
         )}
@@ -115,14 +116,14 @@ export function SafeImage({
         {img.avifSrcSet && (
           <source
             type="image/avif"
-            srcSet={img.avifSrcSet}
+            srcSet={withBaseSrcSet(img.avifSrcSet)}
             sizes={resolvedSizes}
           />
         )}
         {img.webpSrcSet && (
           <source
             type="image/webp"
-            srcSet={img.webpSrcSet}
+            srcSet={withBaseSrcSet(img.webpSrcSet)}
             sizes={resolvedSizes}
           />
         )}
@@ -130,8 +131,8 @@ export function SafeImage({
         {/* Progressive JPEG fallback */}
         <img
           ref={imgRef}
-          src={img.src}
-          srcSet={img.jpgSrcSet || undefined}
+          src={withBasePath(img.src)}
+          srcSet={withBaseSrcSet(img.jpgSrcSet) || undefined}
           sizes={resolvedSizes}
           alt={alt}
           width={img.width}
