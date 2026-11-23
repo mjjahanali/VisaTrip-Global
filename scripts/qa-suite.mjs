@@ -229,8 +229,6 @@ async function main() {
       '/services',
       '/destinations',
       '/tour-packages',
-      '/visa-checker',
-      '/track-application',
       '/success-stories',
       '/gallery',
       '/blog',
@@ -328,7 +326,9 @@ async function main() {
     const sitemapXml = await sitemapResp.text();
     const urlCount = (sitemapXml.match(/<url>/g) || []).length;
     const excludesNoIndex =
-      !sitemapXml.includes('/admin/leads') && !sitemapXml.includes('/track-application');
+      !sitemapXml.includes('/admin/leads') &&
+      !sitemapXml.includes('/track-application') &&
+      !sitemapXml.includes('/visa-checker');
     const hasHreflang =
       sitemapXml.includes('hreflang="bn-BD"') &&
       sitemapXml.includes('hreflang="en"') &&
@@ -336,7 +336,7 @@ async function main() {
     record(
       'SEO',
       'sitemap.xml valid XML with bidirectional bn-BD/en entries and zero noindex routes',
-      sitemapResp.status === 200 && urlCount >= 90 && excludesNoIndex && hasHreflang,
+      sitemapResp.status === 200 && urlCount >= 88 && excludesNoIndex && hasHreflang,
       `${urlCount} URLs`
     );
 

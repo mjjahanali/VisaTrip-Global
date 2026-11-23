@@ -30,12 +30,6 @@ const TourPackagesPage = lazy(() =>
 const TourPackageDetailPage = lazy(() =>
   routeLoaders.packageDetail().then((m) => ({ default: m.TourPackageDetailPage }))
 );
-const VisaCheckerPage = lazy(() =>
-  routeLoaders.visaChecker().then((m) => ({ default: m.VisaCheckerPage }))
-);
-const TrackApplicationPage = lazy(() =>
-  routeLoaders.trackApplication().then((m) => ({ default: m.TrackApplicationPage }))
-);
 const SuccessStoriesPage = lazy(() =>
   routeLoaders.successStories().then((m) => ({ default: m.SuccessStoriesPage }))
 );
@@ -77,8 +71,6 @@ function AppRoutes({ prefix = '' }: { prefix?: string }) {
       <Route path={`${prefix}/destinations/:country`} element={<DestinationDetailPage />} />
       <Route path={`${prefix}/tour-packages`} element={<TourPackagesPage />} />
       <Route path={`${prefix}/tour-packages/:slug`} element={<TourPackageDetailPage />} />
-      <Route path={`${prefix}/visa-checker`} element={<VisaCheckerPage />} />
-      <Route path={`${prefix}/track-application`} element={<TrackApplicationPage />} />
       <Route path={`${prefix}/success-stories`} element={<SuccessStoriesPage />} />
       <Route path={`${prefix}/gallery`} element={<GalleryPage />} />
       <Route path={`${prefix}/blog`} element={<BlogListPage />} />

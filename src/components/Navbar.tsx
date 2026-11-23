@@ -12,8 +12,6 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-  FileSearch,
-  SearchCheck,
   MapPin,
 } from 'lucide-react';
 import { siteConfig } from '../config/site';
@@ -189,26 +187,6 @@ export function Navbar({ onOpenConsultation }: { onOpenConsultation: () => void 
               </div>
 
               <div className="flex flex-wrap items-center gap-5 shrink-0">
-                <div className="flex items-center gap-3">
-                  <Link
-                    to={localizedPath('/visa-checker')}
-                    lang="en"
-                    className="hover:text-[#C9A24B] transition-colors"
-                  >
-                    Visa Checker
-                  </Link>
-                  <span className="text-white/35" aria-hidden="true">·</span>
-                  <Link
-                    to={localizedPath('/track-application')}
-                    lang="en"
-                    className="hover:text-[#C9A24B] transition-colors"
-                  >
-                    Track Application
-                  </Link>
-                </div>
-
-                <div className="h-3.5 w-px bg-white/25" aria-hidden="true" />
-
                 <div
                   className="inline-flex items-center gap-2"
                   role="group"
@@ -391,22 +369,6 @@ export function Navbar({ onOpenConsultation }: { onOpenConsultation: () => void 
                           </Link>
                         ))}
                       </div>
-                      <div className="mt-4 pt-4 border-t border-[#0B1F3A]/8 flex flex-wrap items-center justify-between gap-3 text-xs">
-                        <Link
-                          to={localizedPath('/visa-checker')}
-                          className="inline-flex items-center gap-2 font-semibold text-[#0B1F3A] hover:text-[#7D5D14]"
-                        >
-                          <FileSearch className="w-4 h-4 text-[#7D5D14]" aria-hidden="true" />
-                          {t('ফ্রি Visa Requirement Checker', 'Free Visa Requirement Checker')}
-                        </Link>
-                        <Link
-                          to={localizedPath('/track-application')}
-                          className="inline-flex items-center gap-2 font-semibold text-[#0B1F3A] hover:text-[#7D5D14]"
-                        >
-                          <SearchCheck className="w-4 h-4 text-[#7D5D14]" aria-hidden="true" />
-                          {t('আবেদন ট্র্যাক করুন', 'Track Your Application')}
-                        </Link>
-                      </div>
                     </m.div>
                   )}
                 </AnimatePresence>
@@ -462,7 +424,7 @@ export function Navbar({ onOpenConsultation }: { onOpenConsultation: () => void 
                 initial={false}
                 animate={{ scale: scrolled ? 0.96 : 1 }}
                 transition={{ duration: 0.24, ease: MOTION_EASE }}
-                className="hidden sm:inline-flex btn-primary btn-sm origin-right"
+                className="hidden lg:inline-flex btn-primary btn-sm origin-right"
               >
                 {t('ফ্রি কনসাল্টেশন নিন', 'Free Consultation')}
               </m.button>
@@ -604,8 +566,6 @@ export function Navbar({ onOpenConsultation }: { onOpenConsultation: () => void 
                   { path: '/destinations', label: t('ডেস্টিনেশন', 'Destinations') },
                   { path: '/tour-packages', label: t('ট্যুর প্যাকেজ', 'Tour Packages') },
                   { path: '/services/hajj-umrah', label: t('হজ্জ ও ওমরাহ', 'Hajj & Umrah'), hajj: true },
-                  { path: '/visa-checker', label: 'Visa Requirement Checker', enOnly: true },
-                  { path: '/track-application', label: 'Track Application', enOnly: true },
                   { path: '/blog', label: t('ব্লগ ও গাইড', 'Blog & Guides') },
                   { path: '/service-areas', label: t('সার্ভিস এরিয়া (চাঁপাইনবাবগঞ্জ ও রাজশাহী)', 'Service Areas (Local)') },
                   { path: '/licenses', label: t('লাইসেন্স ও যাচাইকরণ', 'Licenses & Verification') },
@@ -614,7 +574,6 @@ export function Navbar({ onOpenConsultation }: { onOpenConsultation: () => void 
                   <Link
                     key={item.path}
                     to={localizedPath(item.path)}
-                    lang={item.enOnly ? 'en' : undefined}
                     aria-current={isActive(item.path) ? 'page' : undefined}
                     className={`min-h-[48px] flex items-center px-4 py-2 rounded-xl text-[15px] font-semibold transition-colors ${
                       isActive(item.path)

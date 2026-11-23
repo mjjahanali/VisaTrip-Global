@@ -222,20 +222,6 @@ function buildServerRouteSeo(pathname: string): ServerRouteSeo {
       descEn: 'Filter and compare up to 3 international, Umrah, and domestic Bangladesh tour packages side by side at Visatrip Global.',
       imageKey: 'thailand',
     },
-    '/visa-checker': {
-      titleBn: 'ভিসা ডকুমেন্ট চেকার বাংলাদেশ | Visatrip Global',
-      descBn: 'দেশ ও ভিসার ধরন বেছে নিয়ে বাংলাদেশ থেকে প্রয়োজনীয় ডকুমেন্ট, ব্যাংক সলভেন্সি ও সম্ভাব্য প্রসেসিং সময় জানুন ফ্রি।',
-      titleEn: 'Free Visa Requirement Checker | Visatrip Global',
-      descEn: 'Select destination country and visa type to view required documents, solvency tips, and processing times from Bangladesh.',
-      imageKey: 'europe',
-    },
-    '/track-application': {
-      titleBn: 'আবেদন স্ট্যাটাস ট্র্যাক করুন | Visatrip Global',
-      descBn: 'আপনার Application ID ও মোবাইল নম্বর দিয়ে Visatrip Global-এ জমাকৃত ভিসা বা ট্রাভেল ফাইলের বর্তমান স্ট্যাটাস জানুন।',
-      titleEn: 'Track Your Visa Application | Visatrip Global',
-      descEn: 'Check the real-time stage of your visa or travel application at Visatrip Global.',
-      robots: 'noindex, follow',
-    },
     '/success-stories': {
       titleBn: 'সাফল্যের গল্প ও ক্লায়েন্ট মতামত | Visatrip Global',
       descBn: 'Visatrip Global-এর সাথে ভিসা, ওমরাহ, ভারত মেডিকেল ভিসা ও ভ্রমণের বাস্তব অভিজ্ঞতা ও স্বচ্ছ সেবার গল্প।',
@@ -497,14 +483,13 @@ function applyServerRouteSeo(template: string, seo: ServerRouteSeo): string {
 }
 
 function generateSitemapXml(): string {
-  // Exclude noindex utility/private routes (/track-application, /admin/leads) from XML sitemap
+  // Exclude noindex/private routes (/admin/leads) from XML sitemap
   const staticPaths = [
     '/',
     '/about',
     '/services',
     '/destinations',
     '/tour-packages',
-    '/visa-checker',
     '/success-stories',
     '/gallery',
     '/blog',

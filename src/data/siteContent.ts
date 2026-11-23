@@ -18,9 +18,9 @@ export const whyChooseUsPoints = [
   {
     number: '03',
     titleBn: 'প্রতিটি ধাপের নিয়মিত আপডেট',
-    descBn: 'ফাইল জমা দেওয়ার পর আপনাকে অপেক্ষায় রেখে দেওয়া হয় না; প্রতিটি ধাপের অগ্রগতি সরাসরি WhatsApp ও ট্র্যাকিং পেজে জানানো হয়।',
+    descBn: 'ফাইল জমা দেওয়ার পর আপনাকে অপেক্ষায় রেখে দেওয়া হয় না; প্রতিটি ধাপের অগ্রগতি সরাসরি WhatsApp ও ফোনে জানানো হয়।',
     titleEn: 'Consistent Progress Updates',
-    descEn: 'You are never left guessing — receive proactive WhatsApp updates and online status tracking.',
+    descEn: 'You are never left guessing — receive proactive progress updates directly via WhatsApp and phone.',
   },
   {
     number: '04',

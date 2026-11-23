@@ -184,7 +184,6 @@ for (const target of tabTargets) {
 const formErrorTargets = [
   'src/components/InquiryForm.tsx',
   'src/components/ChecklistModal.tsx',
-  'src/pages/TrackApplicationPage.tsx',
   'src/pages/AdminLeadsPage.tsx',
   'src/components/OfficeReviewQrCard.tsx',
 ];

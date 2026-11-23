@@ -276,8 +276,6 @@ const baseValidRoutes = [
   '/services',
   '/destinations',
   '/tour-packages',
-  '/visa-checker',
-  '/track-application',
   '/success-stories',
   '/gallery',
   '/blog',
@@ -330,8 +328,6 @@ const publicStatic = [
   '/services',
   '/destinations',
   '/tour-packages',
-  '/visa-checker',
-  '/track-application',
   '/success-stories',
   '/gallery',
   '/blog',
@@ -388,7 +384,7 @@ for (const reqArea of ['Chapai Nawabganj', 'Gomastapur', 'Rohanpur', 'Nawabganj'
 }
 
 const ws = buildWebSiteSchema();
-assertSchema('WebSite', Boolean(ws['@id'] && ws.potentialAction), 'Missing WebSite @id or SearchAction');
+assertSchema('WebSite', Boolean(ws['@id'] && ws.url && ws.name), 'Missing WebSite @id, url, or name');
 
 const bcEn = buildBreadcrumbSchema(
   [

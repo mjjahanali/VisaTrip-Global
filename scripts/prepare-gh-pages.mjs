@@ -89,7 +89,6 @@ const staticPaths = [
   '/services',
   '/destinations',
   '/tour-packages',
-  '/visa-checker',
   '/success-stories',
   '/gallery',
   '/blog',

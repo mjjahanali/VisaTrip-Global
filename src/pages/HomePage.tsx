@@ -248,16 +248,16 @@ export function HomePage() {
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </a>
               <Link
-                to={localizedPath('/visa-checker')}
+                to={localizedPath('/services')}
                 onClick={() =>
                   trackAnalyticsEvent('cta_click', {
-                    cta_label: 'Try Visa Requirement Checker',
+                    cta_label: 'Explore All Services',
                     cta_location: 'home_how_it_works',
                   })
                 }
                 className="btn-secondary"
               >
-                {t('Visa Requirement Checker দেখুন', 'Try Visa Requirement Checker')}
+                {t('আমাদের সকল সার্ভিস দেখুন', 'Explore All Services')}
               </Link>
             </div>
           </div>

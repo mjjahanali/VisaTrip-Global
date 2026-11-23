@@ -5,7 +5,7 @@
  * - Only prefetches the 4 highest-intent conversion routes on idle:
  *   1. /services (ServicesOverviewPage)
  *   2. /services/:slug (ServiceDetailPage)
- *   3. /visa-checker (VisaCheckerPage)
+ *   3. /destinations (DestinationsPage)
  *   4. /contact (ContactPage)
  * - Strictly respects `navigator.connection.saveData` and skips prefetch on
  *   `slow-2g` / `2g` / low-bandwidth mobile connections.
@@ -20,8 +20,6 @@ export const routeLoaders = {
   destinationDetail: () => import('../pages/DestinationDetailPage'),
   packages: () => import('../pages/TourPackagesPage'),
   packageDetail: () => import('../pages/TourPackageDetailPage'),
-  visaChecker: () => import('../pages/VisaCheckerPage'),
-  trackApplication: () => import('../pages/TrackApplicationPage'),
   successStories: () => import('../pages/SuccessStoriesPage'),
   gallery: () => import('../pages/GalleryPage'),
   blog: () => import('../pages/BlogListPage'),
@@ -77,7 +75,6 @@ export function prefetchRouteByPath(pathname: string): void {
   if (clean.startsWith('/destinations/')) return prefetchRouteKey('destinationDetail');
   if (clean === '/tour-packages') return prefetchRouteKey('packages');
   if (clean.startsWith('/tour-packages/')) return prefetchRouteKey('packageDetail');
-  if (clean === '/visa-checker') return prefetchRouteKey('visaChecker');
   if (clean === '/contact') return prefetchRouteKey('contact');
   if (clean === '/service-areas') return prefetchRouteKey('serviceAreas');
   if (clean === '/about') return prefetchRouteKey('about');
@@ -98,7 +95,7 @@ export function scheduleKeyRoutesPrefetch(): void {
   const run = () => {
     if (!canPrefetchOnCurrentNetwork()) return;
     // Key conversion routes ONLY (never prefetch admin, gallery, legal, or low-frequency routes)
-    const keyRoutes: RouteKey[] = ['services', 'serviceDetail', 'visaChecker', 'contact'];
+    const keyRoutes: RouteKey[] = ['services', 'serviceDetail', 'destinations', 'contact'];
     keyRoutes.forEach((key, index) => {
       window.setTimeout(() => {
         prefetchRouteKey(key);

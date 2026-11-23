@@ -245,11 +245,6 @@ export function buildWebSiteSchema(): Record<string, unknown> {
     name: siteConfig.brandName,
     url: siteConfig.domain,
     inLanguage: ['bn-BD', 'en'],
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${siteConfig.domain}/visa-checker?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 

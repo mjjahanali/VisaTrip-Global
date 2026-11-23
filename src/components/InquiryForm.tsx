@@ -177,12 +177,32 @@ export function InquiryForm({
         utmCampaign: params.get('utm_campaign') || '',
         extra: extraFields,
       };
-      const directWaUrl = buildWhatsAppLink(
-        `আসসালামু আলাইকুম, আমি ${submittedName} (${submittedPhone})। সার্ভিস: ${activeService}${
-          values.country ? `, দেশ: ${values.country}` : ''
-        }। ${submittedMessage || pageCtx.whatsappMessageBn}`,
-        locale
-      );
+      const messageLines = [
+        isEn
+          ? 'Assalamu Alaikum, I would like a Free Consultation from Visatrip Global.'
+          : 'আসসালামু আলাইকুম, আমি Visatrip Global থেকে ফ্রি কনসাল্টেশন নিতে চাই।',
+        '',
+        `${isEn ? 'Name' : 'নাম'}: ${submittedName}`,
+        `${isEn ? 'Phone / WhatsApp' : 'মোবাইল / WhatsApp'}: ${submittedPhone}`,
+        `${isEn ? 'Service' : 'সার্ভিস'}: ${activeService}`,
+        ...(values.country ? [`${isEn ? 'Destination' : 'দেশ'}: ${values.country}`] : []),
+        ...(submittedMessage ? [`${isEn ? 'Details' : 'বিস্তারিত'}: ${submittedMessage}`] : []),
+      ];
+      const directWaUrl = buildWhatsAppLink(messageLines.join('\n'), locale);
+
+      const triggerWhatsAppLaunch = (url: string) => {
+        try {
+          const link = document.createElement('a');
+          link.href = url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } catch {
+          // Inline confirmation card provides a direct WhatsApp CTA fallback
+        }
+      };
 
       // Static hosting mode (e.g. GitHub Pages) without a Node/Express backend
       if (isStaticSiteMode()) {
@@ -210,6 +230,7 @@ export function InquiryForm({
           }
         } else {
           leadId = 'WHATSAPP-DIRECT';
+          triggerWhatsAppLaunch(directWaUrl);
         }
 
         trackAnalyticsEvent('form_submit', {
@@ -230,15 +251,15 @@ export function InquiryForm({
           variant: 'success',
           title: staticEndpoint
             ? t('কনসাল্টেশন অনুরোধ সফলভাবে গৃহীত হয়েছে', 'Consultation Request Received')
-            : t('সরাসরি WhatsApp-এ পাঠানোর জন্য প্রস্তুত', 'Ready to Send on WhatsApp'),
+            : t('WhatsApp-এ মেসেজ প্রস্তুত হয়েছে', 'WhatsApp Message Ready'),
           description: staticEndpoint
             ? t(
                 `রেফারেন্স আইডি: ${leadId}। তাৎক্ষণিক কথা বলতে নিচের WhatsApp বাটন ব্যবহার করুন।`,
                 `Reference ID: ${leadId}. Use WhatsApp below for immediate assistance.`
               )
             : t(
-                'নিচের WhatsApp বাটনে ক্লিক করে আপনার তথ্য সরাসরি আমাদের টিমকে পাঠান।',
-                'Tap the WhatsApp button below to send your details directly to our consultant.'
+                'WhatsApp ওপেন না হলে নিচের বাটনে ক্লিক করে আপনার মেসেজটি পাঠিয়ে দিন।',
+                'If WhatsApp did not open automatically, tap the button below to send your message.'
               ),
         });
         setValues({

@@ -127,8 +127,6 @@ export function Footer() {
                 { to: '/about', label: t('আমাদের সম্পর্কে', 'About Us') },
                 { to: '/destinations', label: t('জনপ্রিয় ডেস্টিনেশন', 'Destinations') },
                 { to: '/tour-packages', label: t('ট্যুর প্যাকেজ', 'Tour Packages') },
-                { to: '/visa-checker', label: 'Visa Checker', enOnly: true },
-                { to: '/track-application', label: t('আবেদন ট্র্যাক করুন', 'Track Application') },
                 { to: '/success-stories', label: t('সাফল্যের গল্প', 'Success Stories') },
                 { to: '/gallery', label: t('গ্যালারি', 'Gallery') },
                 { to: '/blog', label: t('ব্লগ ও গাইড', 'Blog & Guides') },
@@ -139,7 +137,6 @@ export function Footer() {
                 <li key={link.to}>
                   <Link
                     to={localizedPath(link.to)}
-                    lang={link.enOnly ? 'en' : undefined}
                     className="inline-flex items-center min-h-[44px] lg:min-h-0 text-white/85 hover:text-[#C9A24B] transition-colors"
                   >
                     {link.label}

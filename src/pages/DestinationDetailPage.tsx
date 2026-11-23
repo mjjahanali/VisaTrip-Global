@@ -163,13 +163,13 @@ export function DestinationDetailPage() {
                     <span className="text-xs text-[#525B68]">
                       {t('ভিসা সিদ্ধান্ত সম্পূর্ণরূপে সংশ্লিষ্ট Embassy-র।', 'Final visa decisions belong strictly to the Embassy.')}
                     </span>
-                    <Link
-                      to={localizedPath(`/visa-checker?country=${dest.slug}`)}
+                    <a
+                      href="#dest-inquiry"
                       className="text-xs font-semibold text-[#7D5D14] hover:underline inline-flex items-center gap-1"
                     >
-                      {t('Visa Checker-এ বিস্তারিত দেখুন', 'Open in Visa Checker')}
+                      {t('ফ্রি ডকুমেন্ট যাচাই করুন', 'Request Free Document Check')}
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
 
